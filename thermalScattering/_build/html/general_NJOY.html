@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>NJOY Introduction &mdash; leapr  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Theory of Thermal Neutron Scattering" href="thermalScatteringTheory.html" />
+    <link rel="prev" title="Welcome to leapr’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: red" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> leapr
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">NJOY Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#njoy-overview">NJOY Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#njoy-example">NJOY Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="thermalScatteringTheory.html">Theory of Thermal Neutron Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additional.html">Additional Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">leapr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>NJOY Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/general_NJOY.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="njoy-introduction">
+<h1>NJOY Introduction<a class="headerlink" href="#njoy-introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="njoy-overview">
+<h2>NJOY Overview<a class="headerlink" href="#njoy-overview" title="Permalink to this headline">¶</a></h2>
+<p>The NJOY Nuclear Data Processing System is a comprehensive computer code package for producing pointwise and multigroup cross sections and related quantities from evaluated nuclear data in the ENDF format. NJOY works with evaluated files for incident neutrons, photons, and charged particles, producing libraries for a wide variety of particle transport and reactor analysis codes</p>
+<p>The NJOY code consists of a set of 24 main modules, each performing a well-defined processing task. These modules are essentially separate computer programs, that can interact with each other by input and output files. The modules are supported by a number of subsidiary modules providing things like physics constants, utility routines, and mathematics subroutines that can be “used” by the main modules.</p>
+</div>
+<div class="section" id="njoy-example">
+<h2>NJOY Example<a class="headerlink" href="#njoy-example" title="Permalink to this headline">¶</a></h2>
+<p>NJOY input files are able to call multiple modules in sequence, which can be used together to perform complicated manipulations of the nuclear data. Broadly speaking, an NJOY input file will be structured as follows.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>Module1                / Specify first module 
+  input1               /         card1 (Cards for Module 1)
+  input1 input2 input3 /         card2
+  input1 input2        /         card3
+Module2                / Specify second module 
+  input1               /         card1  (Cards for Module 2)
+  input1 input2        /         card2
+  input1 input2 input3 
+  input4 input5        /         card3 (can run onto next line)
+  input1 input2        /         card4
+  input1 input2 input3 /         card5
+Module3                / Specify final module 
+  input1 input2        /         card1  (Cards for Module 3)
+  input1               /         card2 
+stop                   / this tells NJOY to stop reading file
+</pre></div>
+</div>
+<p>Here, the first module name is specified, and the inputs are divided into “cards” (i.e., lines of input). Each module has its own number of possible cards, and each card has its own number of inputs. Modules are called in the order that they appear on this input file, so Module 2 can accept the output of Module 1.</p>
+<p>Lines of NJOY input files may not exceed 80 characters, so if an line of input needs multiple lines, they may do so (this is shown in Module 2 Card 3 above). Any characters folloring a single forawrd slash is considered a comment and will not be read as input.</p>
+<p>Many modules in NJOY cannot be called in isolation, as they require the output of some other module as input. LEAPR, however, can be called alone, as it does not require any auxiliary input files (just the input file is sufficient to call LEAPR).</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="thermalScatteringTheory.html" class="btn btn-neutral float-right" title="Theory of Thermal Neutron Scattering" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to leapr’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright copyright stuff
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+Module1                / Specify first module 
+  input1               /         card1 (Cards for Module 1)
+  input1 input2 input3 /         card2
+  input1 input2        /         card3
+Module2                / Specify second module 
+  input1               /         card1  (Cards for Module 2)
+  input1 input2        /         card2
+  input1 input2 input3 
+  input4 input5        /         card3 (can run onto next line)
+  input1 input2        /         card4
+  input1 input2 input3 /         card5
+Module3                / Specify final module 
+  input1 input2        /         card1  (Cards for Module 3)
+  input1               /         card2 
+stop                   / this tells NJOY to stop reading file
+
