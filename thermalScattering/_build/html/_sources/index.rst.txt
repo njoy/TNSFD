@@ -11,6 +11,7 @@ Welcome to leapr's documentation!
    :caption: Contents:
 
    overview
+   incoherentApproximation
    scatteringLaw
    coherentElastic
    inelastic
