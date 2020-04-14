@@ -37,7 +37,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Additional Resources" href="additional.html" />
-    <link rel="prev" title="NJOY Introduction" href="general_NJOY.html" /> 
+    <link rel="prev" title="Overview of Thermal Neutron Scattering" href="overview.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,15 +83,8 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="general_NJOY.html">NJOY Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of Thermal Neutron Scattering</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Theory of Thermal Neutron Scattering</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#what-are-thermal-neutrons">What are Thermal Neutrons?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#types-of-scattering">Types of Scattering</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#elastic-vs-inelastic">Elastic vs. Inelastic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#coherent-vs-incoherent">Coherent vs. Incoherent</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#overview-of-objectives">Overview of Objectives</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="#incoherent-scattering-elastic-and-inelastic">Incoherent Scattering (Elastic and Inelastic)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#continuous-treatment">Continuous Treatment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#translational-behavior">Translational Behavior</a></li>
@@ -183,49 +176,6 @@
             
   <div class="section" id="theory-of-thermal-neutron-scattering">
 <span id="theory"></span><h1>Theory of Thermal Neutron Scattering<a class="headerlink" href="#theory-of-thermal-neutron-scattering" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="what-are-thermal-neutrons">
-<h2>What are Thermal Neutrons?<a class="headerlink" href="#what-are-thermal-neutrons" title="Permalink to this headline">¶</a></h2>
-<p>LEAPR aims to describe the ways in which low energy neutrons (with energy on the order of 1 eV or less) interact with material. Accurately describing these interactions is crucial for adequate modeling of thermal nuclear systems. A neutron at room temperature has an energy of approximately 0.025 eV, meaning that its de Broglie wavelength is about 1 angstrom which is close to typical interatomic spacing in materials. This can complicate neutron-target interactions, and thus describing thermal scattering must account for the wave-like behavior of neutrons.</p>
-</div>
-<div class="section" id="types-of-scattering">
-<span id="overview-types-of-scattering"></span><h2>Types of Scattering<a class="headerlink" href="#types-of-scattering" title="Permalink to this headline">¶</a></h2>
-<p>The probability of a neutron with initial energy and solid angle <span class="math notranslate nohighlight">\((E,\Omega)\)</span> scattering to have some final energy and solid angle <span class="math notranslate nohighlight">\((E',\Omega')\)</span> is described using the double differential scattering cross section <span class="math notranslate nohighlight">\(\sigma(E\rightarrow E', \Omega\rightarrow\Omega')\)</span>. This cross section describes both elastic and inelastic scattering, both of which have a coherent and incoherent contribution.</p>
-<img alt="_images/scatteringBreakdown.jpeg" src="_images/scatteringBreakdown.jpeg" />
-<div class="section" id="elastic-vs-inelastic">
-<h3>Elastic vs. Inelastic<a class="headerlink" href="#elastic-vs-inelastic" title="Permalink to this headline">¶</a></h3>
-<p>Elastic scattering means that the total kinetic energy of the system (neutron plus target) is the same before and after the scattering collision. This is contrasted with inelastic scattering, where kinetic energy is not conserved. This change in energy is due to some excitation (or de-excitation) occurred.</p>
-<hr class="docutils" />
-<p><strong>Does an elastically scattered neutron have the same incoming/outgoing energy?</strong></p>
-<p>If a neutron scatters off of a target of similar size (e.g. a hydrogen nucleus), the neutron can lose nearly all its energy. If the target is significantly more massive than the neutron, however, conservation of momentum prevents the neutron from losing a large amount of its energy.</p>
-<p>When fast / resonance range neutrons scatter off of media, their incoming energy is so much larger than the molecular bonds of the scattering material, which allows the neutron to effectively “see” the target as just a free atom. Thermal neutrons, however, do not have enough incoming energy to allow them to ignore molecular and lattice bonds. They thus cannot scatter off of a free atom, but rather scatter off of an atom that is part of a much larger aggregate system. This can make it harder for the neutron to lose a large fraction of its energy in an elastic scattering event.</p>
-<p>The incoming and outgoing energies of scattered thermal neutrons are not the same, but will have a tendency to be much closer than those of higher energy neutrons.</p>
-<hr class="docutils" />
-<p><strong>Isn’t inelastic scattering a threshold reaction?</strong></p>
-<p>For high energy neutrons, the excitation associated with an inelastic collision is a <em>nuclear</em> excitation, where the target nucleus is brought to some excited state. This requires a significant amount of energy, and thus nuclear inelastic scattering is a <em>threshold</em> reaction, as seen below.</p>
-<div class="figure align-center" id="id2">
-<a class="reference internal image-reference" href="_images/U238_xs.png"><img alt="_images/U238_xs.png" src="_images/U238_xs.png" style="width: 60%;" /></a>
-<p class="caption"><span class="caption-text">Elastic and nuclear inelastic scattering cross sections for U-238 (from NNDC). Note that nuclear inelastic scattering is a threshold reaction that does not appreciable contribute until incoming neutrons have an incoming energy of about 0.1 MeV.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
-<p>For thermal (low energy) neutrons, inelastic scattering is caused by some <em>molecular</em> or <em>lattice</em> excitation, where vibrational modes of a multi-atom system are excited. Molecular excitations can be induced by neutrons with energy on the order of 1 eV and do not exhibit the same extreme threshold behavior as does nuclear excitations. Thermal inelastic scattering is thus focused on molecular excitations. The availability of vibrational modes that could be excited in some lattice system is described by the vibrational frequency spectrum / phonon density of states / phonon frequency distribution.</p>
-</div>
-<div class="section" id="coherent-vs-incoherent">
-<h3>Coherent vs. Incoherent<a class="headerlink" href="#coherent-vs-incoherent" title="Permalink to this headline">¶</a></h3>
-<p>Neutron scattering is the interaction of wavefunctions, where the incoming neuton wave interacts with a target and creates a scattered spherical wave. This is simply due to the fact that a large incoming wave hitting a (relatively) small target will result in a spherical scattered wave. Additionally, large thermal neutron wavelength means that the neutron can exist atop multiple atoms at once, creating simultaneous scattering sites.</p>
-<p>When these scattered spherical waves, which originate from different scattering sites interfere, they can do so either coherently (meaning periodic constructive growth or destructive cancellation) or incoherently (meaning that no large-scale periodic growth or cancellation occurs).</p>
-<p>Incoherent scattering is significantly easier to model, and LEAPR has the ability to desribe both elastic and inelastic incoherent scattering (which correspond to total kinetic energy conservation and change, respectively). Coherent scattering is harder to quantify, and LEAPR currently has the ability to describe only elastic coherent scattering for selected materials.</p>
-<p>For reactor systems, incoherent scattering primarily dominates (which facilitates data preparation, as incoherent scattering is simpler to process). There are some instances, however, where neglecting coherent scattering could result in significant error. For a brief discussion detailing <em>when</em> coherent scattering is important, please see [SOURCE].</p>
-</div>
-<div class="section" id="overview-of-objectives">
-<h3>Overview of Objectives<a class="headerlink" href="#overview-of-objectives" title="Permalink to this headline">¶</a></h3>
-<p>As seen above, there are multiple types of thermal scattering that occur in a reactor system. LEAPR aims to prepare data describing these different types of interactions, namely the <strong>scattering law</strong>, <span class="math notranslate nohighlight">\(S(\alpha,\beta)\)</span>. The scattering law is a function of dimensionless momentum and energy exchange (<span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>, respectively),</p>
-<div class="math notranslate nohighlight">
-\[\alpha = \frac{E'+E-2\mu\sqrt{EE'}}{Ak_bT}\qquad~\qquad\beta=\frac{E'-E}{k_bT}.\]</div>
-<p>Once obtained, the scattering law can be used to calculate the double differential scattering cross section,</p>
-<div class="math notranslate nohighlight">
-\[\frac{d^2\sigma}{dE'~d\Omega }=\frac{\sigma_b}{2k_bT}\sqrt{\frac{E'}{E}}S(\alpha,\beta)\]</div>
-<p>Thus, the goal of LEAPR is to calculate this scattering law for some user-provided <span class="math notranslate nohighlight">\(\alpha,\beta\)</span> grid. Doing so requires many approximation that will be described in the coming sections. Incoherent scattering is significantly easier to describe, and LEAPR calculates this contribution to the scattering law by use of a user-provided vibrational frequency spectrum (sometimes known as frequency distribution, phonon distribution, phonon density of states, etc.). Cohernt scattering is significantly more difficult to describe, and so LEAPR’s ability to calculate coherent scattering contributions is much more limited. Coherent elastic scattering capabilities are available for certain materials, and coherent inelastic scattering can be approximated if additional material data (namely, the static structure factor) is provided.</p>
-</div>
-</div>
 <div class="section" id="incoherent-scattering-elastic-and-inelastic">
 <span id="theory-incoherent"></span><h2>Incoherent Scattering (Elastic and Inelastic)<a class="headerlink" href="#incoherent-scattering-elastic-and-inelastic" title="Permalink to this headline">¶</a></h2>
 <p>LEAPR describes incoherent scattering by starting with a continuous (solid-type) distribution and considering additional feautres (e.g. the existence of very sharp peaks or diffusive behavior) if necessary. The continuous calculation <em>must always be performed</em>, and additional features that can also be considered include the existence of discrete oscillators (Einstein oscillators), translative/diffusive behavior, cold Hydrogen/Deuterium, and intermolecular interference.</p>
@@ -495,9 +445,9 @@ In describing the scattering behavior with a continuous, solid-type spectrum, a 
 <div class="section" id="discrete-oscillators">
 <span id="theory-incoherent-discre"></span><h3>Discrete Oscillators<a class="headerlink" href="#discrete-oscillators" title="Permalink to this headline">¶</a></h3>
 <p>The blue region in the below figure shows the vibrational frequency spectrum for hydrogen bound in water [inspired by [CITE DAMIAN]]. Note the two prominent peaks near 0.20 eV and 0.42 eV. If a user wanted to process scattering data for this material, they could provide this full spectrum to LEAPR and have it run the full continuous calculation.</p>
-<div class="figure align-center" id="id3">
+<div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="_images/waterPhononDOS_hatch.png"><img alt="_images/waterPhononDOS_hatch.png" src="_images/waterPhononDOS_hatch.png" style="width: 90%;" /></a>
-<p class="caption"><span class="caption-text">The vibrational frequency spectrum for H bound in water is shown above.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">The vibrational frequency spectrum for H bound in water is shown above.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 <p>Alternatively, LEAPR allows for users to represent these higher energy peaks as discrete oscillators, also known as “Einstein oscillators”. These oscilltors are represented as weighted Dirac-<span class="math notranslate nohighlight">\(\delta\)</span> functions in the frequency distribution, which brings the blue distribution in the above figure to become the red distribution. The lower energy, continuous distribution is still the same, but the two higher energy peaks are replaced with weighted <span class="math notranslate nohighlight">\(\delta\)</span> functions (the weighting is not represented in the above figure).</p>
 <p>As can be seen in the figure above, reducing the peaks to simple oscillators eliminates peak resolution and is <strong>only recommended for validating and replicating existing data</strong>.</p>
@@ -743,9 +693,9 @@ F(\tau)\Big|^2\)</span></div>
 <p>The continuous treatment equations introduced in <a class="reference internal" href="#theory-incoherent-contin"><span class="std std-ref">Continuous Treatment</span></a> were stated assuming that spins are randomly distributed. This approximation is valid for most materials, but breaks down when describing liquid hydrogen and deuterium. To correct this error, quantum mechanical treatment is required to account for spin-spin correlations for atoms in the same molecule/structure.</p>
 <p>For the remainder of this discussion, “hydrogen” will refer to the element, i.e. both <span class="math notranslate nohighlight">\(^1\mathrm{H}\)</span> and <span class="math notranslate nohighlight">\(^2\mathrm{D}\)</span>.</p>
 <p>For describing the spin-spin correlation for hydrogen, two cases are considered: <em>ortho</em> and <em>para</em>. Ortho hydrogen indicates that the spins of the nuclei are in the same direction, whereas para hydrogen indicates that the spins are in opposite direction.</p>
-<div class="figure align-center" id="id4">
+<div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="_images/orthoVsPara.png"><img alt="_images/orthoVsPara.png" src="_images/orthoVsPara.png" style="width: 40%;" /></a>
-<p class="caption"><span class="caption-text">Ortho and para describe the alignment of the spins that can occur in a pair of hydrogens. Ortho corresponds to the spins going in the same direction, whereas para corresponds to them going in the opposite direction.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Ortho and para describe the alignment of the spins that can occur in a pair of hydrogens. Ortho corresponds to the spins going in the same direction, whereas para corresponds to them going in the opposite direction.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 <p>There are two different scattering law equations that describe cold hydrogen scattering, depending on the relative spin directions (ortho and para).</p>
 <div class="math notranslate nohighlight">
@@ -973,7 +923,7 @@ a_i^2/4\)</span></p></td>
         <a href="additional.html" class="btn btn-neutral float-right" title="Additional Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="general_NJOY.html" class="btn btn-neutral float-left" title="NJOY Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="overview.html" class="btn btn-neutral float-left" title="Overview of Thermal Neutron Scattering" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

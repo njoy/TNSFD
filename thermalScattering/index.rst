@@ -10,8 +10,11 @@ Welcome to leapr's documentation!
    :maxdepth: 4
    :caption: Contents:
 
-   general_NJOY
-   thermalScatteringTheory 
+   overview
+   scatteringLaw
+   coherentElastic
+   inelastic
+   SCT_etc
    additional 
 ..   overview
    quickStart

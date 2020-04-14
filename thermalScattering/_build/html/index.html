@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="NJOY Introduction" href="general_NJOY.html" /> 
+    <link rel="next" title="Overview of Thermal Neutron Scattering" href="overview.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,8 +82,11 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="general_NJOY.html">NJOY Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="thermalScatteringTheory.html">Theory of Thermal Neutron Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of Thermal Neutron Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scatteringLaw.html">Thermal Scattering Law S(a,b)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coherentElastic.html">Coherent Elastic Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inelastic.html">Inelastic Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SCT_etc.html">Special Cases and Misc. Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="additional.html">Additional Resources</a></li>
 </ul>
 
@@ -154,39 +157,62 @@
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="general_NJOY.html">NJOY Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="general_NJOY.html#njoy-overview">NJOY Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="general_NJOY.html#njoy-example">NJOY Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of Thermal Neutron Scattering</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#what-are-thermal-neutrons">What are Thermal Neutrons?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#types-of-scattering">Types of Scattering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#elastic-vs-inelastic">Elastic vs. Inelastic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#coherent-vs-incoherent">Coherent vs. Incoherent</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="thermalScatteringTheory.html">Theory of Thermal Neutron Scattering</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="thermalScatteringTheory.html#what-are-thermal-neutrons">What are Thermal Neutrons?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="thermalScatteringTheory.html#types-of-scattering">Types of Scattering</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#elastic-vs-inelastic">Elastic vs. Inelastic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#coherent-vs-incoherent">Coherent vs. Incoherent</a></li>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#overview-of-objectives">Overview of Objectives</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="thermalScatteringTheory.html#incoherent-scattering-elastic-and-inelastic">Incoherent Scattering (Elastic and Inelastic)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#continuous-treatment">Continuous Treatment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#translational-behavior">Translational Behavior</a></li>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#discrete-oscillators">Discrete Oscillators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scatteringLaw.html">Thermal Scattering Law S(a,b)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scatteringLaw.html#here">Here</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="scatteringLaw.html#there">There</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="thermalScatteringTheory.html#coherent-scattering-elastic">Coherent Scattering (Elastic)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#hexagonal-lattices">Hexagonal Lattices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#hexagonal-close-packed">Hexagonal Close Packed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#face-centered-cubic">Face Centered Cubic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#body-centered-cubic">Body Centered Cubic</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="thermalScatteringTheory.html#coherent-scattering-inelastic-approximations">Coherent Scattering (Inelastic) Approximations</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#skold-and-vineyard">Skold and Vineyard</a></li>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#cold-hydrogen-and-deuterium">Cold Hydrogen and Deuterium</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coherentElastic.html">Coherent Elastic Scattering</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coherentElastic.html#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coherentElastic.html#hexagonal-lattices">Hexagonal Lattices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coherentElastic.html#hexagonal-close-packed">Hexagonal Close Packed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coherentElastic.html#face-centered-cubic">Face Centered Cubic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coherentElastic.html#body-centered-cubic">Body Centered Cubic</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="thermalScatteringTheory.html#special-cases-and-misc-functions">Special Cases and Misc. Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="thermalScatteringTheory.html#short-collision-time-approximation">Short-collision time approximation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="inelastic.html">Inelastic Scattering</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="inelastic.html#incoherent-scattering-elastic-and-inelastic">Incoherent Scattering (Elastic and Inelastic)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="inelastic.html#continuous-treatment">Continuous Treatment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inelastic.html#translational-behavior">Translational Behavior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inelastic.html#discrete-oscillators">Discrete Oscillators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="inelastic.html#coherent-scattering-elastic">Coherent Scattering (Elastic)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="inelastic.html#hexagonal-lattices">Hexagonal Lattices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inelastic.html#hexagonal-close-packed">Hexagonal Close Packed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inelastic.html#face-centered-cubic">Face Centered Cubic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inelastic.html#body-centered-cubic">Body Centered Cubic</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="inelastic.html#coherent-scattering-inelastic-approximations">Coherent Scattering (Inelastic) Approximations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="inelastic.html#skold-and-vineyard">Skold and Vineyard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inelastic.html#cold-hydrogen-and-deuterium">Cold Hydrogen and Deuterium</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="inelastic.html#special-cases-and-misc-functions">Special Cases and Misc. Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="inelastic.html#short-collision-time-approximation">Short-collision time approximation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SCT_etc.html">Special Cases and Misc. Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SCT_etc.html#short-collision-time-approximation">Short-collision time approximation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SCT_etc.html#coherent-inelastic-scattering-approximations">Coherent Inelastic Scattering Approximations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="SCT_etc.html#skold-and-vineyard">Skold and Vineyard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SCT_etc.html#cold-hydrogen-and-deuterium">Cold Hydrogen and Deuterium</a></li>
 </ul>
 </li>
 </ul>
@@ -217,7 +243,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="general_NJOY.html" class="btn btn-neutral float-right" title="NJOY Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="overview.html" class="btn btn-neutral float-right" title="Overview of Thermal Neutron Scattering" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
