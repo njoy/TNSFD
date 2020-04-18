@@ -11,10 +11,9 @@ Welcome to leapr's documentation!
    :caption: Contents:
 
    overview
-   incoherentApproximation
-   scatteringLaw
+   backgroundKeyEqs
+   elasticVsInelastic 
    coherentElastic
-   inelastic
    SCT_etc
    additional 
 ..   overview

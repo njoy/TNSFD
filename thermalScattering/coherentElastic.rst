@@ -12,7 +12,57 @@
 Coherent Elastic Scattering
 **************************************
 
-.. COMMENT: .. contents:: Table of Contents
+
+Coherent scattering is when periodic constructive growth or destructive cancellation of the scattered waves occur. This is a difficult phenomena to model, and thus LEAPR is currently limited to describing elastic coherent scattering for the following materials:
+
+
+The differential coherent scattering cross section is
+
+.. math:: 
+  \sigma_{coh}(E,\mu)=\frac{\sigma_c}{E}\sum_{E_i<E}f_i~\mathrm{e}^{-4W~E_i}~\delta(\mu-\mu_i)
+
+and the integrated cross section (only energy dependence, integrated over angles), is 
+
+.. math:: 
+  \sigma_{coh}(E)=\frac{\sigma_c}{E}\sum_{E_i<E}f_i~\mathrm{e}^{-4W~E_i}.
+
+Here, :math:`\sigma_c` is the effective bound coherent scattering cross section for the material, :math:`W` is the effective Debye Waller coefficient, :math:`E_i` are the *Bragg Edges*, :math:`f_i` are related to the crystallographic structure factors, and 
+
+
+
+
++-------------------+-----------------------+------------------------------------+
+| Symbol            | Name                  |  Formula                           |
++===================+=======================+====================================+
+| :math:`W`         | | Effective Debye     | | :math:`\frac{\lambda/}{Ak_bT}`   |
+|                   | | Waller coefficient  | | where :math:`\lambda` comes from | 
+|                   |                       |   !!!!!!!!!!!!!!!!                 |
++-------------------+-----------------------+------------------------------------+
+| :math:`\sigma_c`  | | Effective coherent  |                                    |
+|                   | | bound scattering    |                                    |
+|                   | | cross section       |                                    |
++-------------------+-----------------------+------------------------------------+
+| :math:`E_i`       | | Bragg Edges         | :math:`E_i=                        |
+|                   |                       | \frac{\hbar^2\tau_i^2}{8m}`        |
++-------------------+-----------------------+------------------------------------+
+| :math:`\tau_i`    | | Length of the       |                                    |
+|                   | | :math:`i^{th}`      |                                    |
+|                   |   reciprocal          |                                    |
+|                   | | lattice vector      |                                    |
++-------------------+-----------------------+------------------------------------+
+| :math:`f_i`       |                       | :math:`f_i=                        |
+|                   |                       | \frac{2\pi\hbar^2}{4mNV}           |
+|                   |                       | \sum_{\tau_i}\Big|F(\tau)          |
+|                   |                       | \Big|^2`                           |
++-------------------+-----------------------+------------------------------------+
+| | :math:`\Big|    | | Crystallographic    | :math:`|F(\tau)|^2                 |
+|   F(\tau)\Big|^2` | | structure           | = \left|\sum_{j=1}^N               |
+|                   | | factor              | \mathrm{e}^{2\pi\phi_ji}\right|^2` |
++-------------------+-----------------------+------------------------------------+
+
+
+
+
 
 
 
@@ -46,36 +96,39 @@ The differential coherent scattering cross section is
 .. math:: 
   \sigma_{coh}(E,\mu)=\frac{\sigma_c}{E}\sum_{E_i<E}f_i~\mathrm{e}^{-4W~E_i}~\delta(\mu-\mu_i)
 
-where :math:`W` is the effevtive Debye-Waller coefficient, :math:`\sigma_c` is the bound coherent scattering cross section. :math:`E_i` are Bragg Edges, defined in term
+.. where :math:`W` is the effevtive Debye-Waller coefficient, :math:`\sigma_c` is the bound coherent scattering cross section. :math:`E_i` are Bragg Edges, defined in term
 
 
-  +-------------------+-----------------------+------------------------------------+
-  | Symbol            | Name                  |  Formula                           |
-  +===================+=======================+====================================+
-  | :math:`W`         | | Effective Debye     |                                    |
-  |                   | | Waller coefficient  |                                    |
-  +-------------------+-----------------------+------------------------------------+
-  | :math:`\sigma_c`  | | Bound coherent      |                                    |
-  |                   | | scattering cross    |                                    |
-  |                   | | section             |                                    |
-  +-------------------+-----------------------+------------------------------------+
-  | :math:`E_i`       | | Bragg Edges         | :math:`E_i=                        |
-  |                   |                       | \frac{\hbar^2\tau_i^2}{8m}`        |
-  +-------------------+-----------------------+------------------------------------+
-  | :math:`\tau_i`    | | Length of the       |                                    |
-  |                   | | :math:`i^{th}`      |                                    |
-  |                   |   reciprocal          |                                    |
-  |                   | | lattice vector      |                                    |
-  +-------------------+-----------------------+------------------------------------+
-  | :math:`f_i`       |                       | :math:`f_i=                        |
-  |                   |                       | \frac{2\pi\hbar^2}{4mNV}           |
-  |                   |                       | \sum_{\tau_i}\Big|F(\tau)          |
-  |                   |                       | \Big|^2`                           |
-  +-------------------+-----------------------+------------------------------------+
-  | | :math:`\Big|    | | Crystallographic    | :math:`|F(\tau)|^2                 |
-  |   F(\tau)\Big|^2` | | structure           | = \left|\sum_{j=1}^N               |
-  |                   | | factor              | \mathrm{e}^{2\pi\phi_ji}\right|^2` |
-  +-------------------+-----------------------+------------------------------------+
+
+
+
++-------------------+-----------------------+------------------------------------+
+| Symbol            | Name                  |  Formula                           |
++===================+=======================+====================================+
+| :math:`W`         | | Effective Debye     |                                    |
+|                   | | Waller coefficient  |                                    |
++-------------------+-----------------------+------------------------------------+
+| :math:`\sigma_c`  | | Effective coherent  |                                    |
+|                   | | bound scattering    |                                    |
+|                   | | cross section       |                                    |
++-------------------+-----------------------+------------------------------------+
+| :math:`E_i`       | | Bragg Edges         | :math:`E_i=                        |
+|                   |                       | \frac{\hbar^2\tau_i^2}{8m}`        |
++-------------------+-----------------------+------------------------------------+
+| :math:`\tau_i`    | | Length of the       |                                    |
+|                   | | :math:`i^{th}`      |                                    |
+|                   |   reciprocal          |                                    |
+|                   | | lattice vector      |                                    |
++-------------------+-----------------------+------------------------------------+
+| :math:`f_i`       |                       | :math:`f_i=                        |
+|                   |                       | \frac{2\pi\hbar^2}{4mNV}           |
+|                   |                       | \sum_{\tau_i}\Big|F(\tau)          |
+|                   |                       | \Big|^2`                           |
++-------------------+-----------------------+------------------------------------+
+| | :math:`\Big|    | | Crystallographic    | :math:`|F(\tau)|^2                 |
+|   F(\tau)\Big|^2` | | structure           | = \left|\sum_{j=1}^N               |
+|                   | | factor              | \mathrm{e}^{2\pi\phi_ji}\right|^2` |
++-------------------+-----------------------+------------------------------------+
 
 
 

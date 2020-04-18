@@ -6,7 +6,7 @@
 .. |EXAMPLE| image:: _images/temp.png
    :width: 1em
 
-.. _theory:
+.. .. .. _theory:
 
 **************************************
 Special Cases and Misc. Functions
@@ -79,7 +79,7 @@ where :math:`M` is the mass of the scatterer. Using these relations, the coheren
 
 Cold Hydrogen and Deuterium 
 -------------------------------
-The continuous treatment equations introduced in :ref:`theory_incoherent_contin` were stated assuming that spins are randomly distributed. This approximation is valid for most materials, but breaks down when describing liquid hydrogen and deuterium. To correct this error, quantum mechanical treatment is required to account for spin-spin correlations for atoms in the same molecule/structure.
+In !!!!!!!!!!!!, we made the assumption that spins are randomly distributed. This approximation is valid for most materials, but breaks down when describing liquid hydrogen and deuterium. To correct this error, quantum mechanical treatment is required to account for spin-spin correlations for atoms in the same molecule/structure.
 
 For the remainder of this discussion, "hydrogen" will refer to the element, i.e. both :math:`^1\mathrm{H}` and :math:`^2\mathrm{D}`. 
 
