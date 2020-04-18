@@ -26,7 +26,7 @@ The two steps to preparing cross sections are:
 1. Calculate the scattering law :math:`S(\alpha,\beta)`. This is primarily done by the LEAPR module.
 2. Use the scattering law to calculate the cross section, and prepare the final data on ENDF files. This is performed by the THERMR module.
  
-For more information on these steps, please see !!!!!!
+For more information on these steps, please see [LINK TO LEAPR AND THERMR DOCUMENTATION HERE]
 
 
 Currently, the inelastic thermal neutron scattering uses the following approximations:
@@ -101,17 +101,6 @@ Currently, the inelastic thermal neutron scattering uses the following approxima
   |                   | |    LEAPR inputs with which the ENDF files were generated. In those LEAPR inputs |
   |                   | |    are phonon distributions.                                                    |
   +-------------------+-----------------------------------------------------------------------------------+
-  | | Derivation of   | | Please see !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!                                   |
-  | | Phonon Expansion|                                                                                   |
-  +-------------------+-----------------------------------------------------------------------------------+
-  | |                 |                                                                                   |
-  +-------------------+-----------------------------------------------------------------------------------+
-
-..  | | Debye-Waller    | | please see [  ]                                                                 |
-  | | coefficient     | |                                                                                 |
-  +-------------------+-----------------------------------------------------------------------------------+
-
-
 
 
 

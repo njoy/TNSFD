@@ -44,6 +44,8 @@ where the above integrals are only dependent on changes of neutron energy :math:
 Speaking loosely, if there exists a particle at the origin at time :math:`t=0`, then :math:`G(\mathbf{r},t)` is the probability that a particle is at location :math:`\mathbf{r}` at time :math:`t`. The self component is when the particle at :math:`\mathbf{r}` is the same particle that was at the origin, whereas the distinct component assumes that they are not the same particle. 
 Naturally, the distinct component is significantly harder to compute, which is not necessary for the incoherent contribution, but *is* necessary for the coherent. 
 
+.. _incoherent_approximation:
+
 Incoherent Approximation
 ======================================
 Modern thermal neutron scattering calculations typically rely on the **incoherent approximation**, which assumes that the distinct component of the pair distribution function :math:`G_d(\mathbf{r},t)` is negigible, meaning that the coherent scattering contribution has the same form as the incoherent contribution. This approximation allows us to simplify the scattering cross section equation to be

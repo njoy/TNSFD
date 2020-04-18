@@ -16,7 +16,7 @@ Short-Collision Time Approximation
   COMMENT: .. contents:: Table of Contents
 
 
-When calculating the contribution of incoherent scattering via use of the *phonon expansion*, values corresponding to significant change in momentum (i.e. large :math:`\alpha` values) can become costly to calculate. To avoid prohibitively costly calculations, LEAPR employs the **short-collision time approximation (SCT)** to describe scattering in a solid for these conditions of large momentum transfer. The SCT approximation is defined as 
+Calculating the scattering law :math:`S(\alpha,\beta)` for large momentum changes (i.e. large :math:`\alpha` values) can become costly. To avoid prohibitively costly calculations, LEAPR employs the **short-collision time approximation (SCT)** to describe scattering in a solid for these conditions of large momentum transfer. The SCT approximation is defined as 
 
 .. math::
   S(\alpha,-\beta)=\frac{1}{\sqrt{4\pi\alpha w_s \overline{T}/T}}~\mathrm{exp}\left[-\frac{(\alpha w_s-\beta)^2}{\alpha w_s\overline{T}/T}\right]
