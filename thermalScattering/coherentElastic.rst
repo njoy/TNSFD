@@ -12,10 +12,6 @@
 Coherent Elastic Scattering
 **************************************
 
-Overview
-==============================================
-
-
 
 Coherent scattering is when periodic constructive growth or destructive cancellation of the scattered waves occur. This is a difficult phenomena to model, and thus LEAPR is currently limited to describing elastic coherent scattering for the following materials:
 

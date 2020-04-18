@@ -53,6 +53,8 @@ Modern thermal neutron scattering calculations typically rely on the **incoheren
 
 where the bound scattering cross section :math:`\sigma_b=\sigma_{inc}+\sigma_{coh}`.
 
+.. _scatteringLaw:
+
 Scattering Law
 ======================================
 The cross section equation above is often represented in terms of the **scattering law** :math:`S(\alpha,\beta)`, which is the result of two Fourier transforms in time and space, and a change of variables to make momentum exchange and energy exchange unitless. These new unitless momentum and energy exchanges, :math:`\alpha` and :math:`\beta`, respectively, are defined as 
@@ -69,7 +71,7 @@ Finally, the change in neutron angle is assumed to be isotropic in the azimuthal
 .. math::
     \sigma(E\rightarrow E',\mu) = \frac{\sigma_b}{k_bT}\sqrt{\frac{E'}{E}}~S(\alpha,\beta)
     
-where the scattering law is 
+where for most solids, the scattering law is defined in terms of the phonon density of states :math:`\rho(\beta)`, 
 
 .. math::
     S(\alpha,\beta) = \frac{1}{2\pi}\int_{-\infty}^\infty\mathrm{e}^{i\beta t}~\mathrm{e}^{\gamma(t)-\gamma(0)}~dt
@@ -78,7 +80,7 @@ where the scattering law is
     \gamma(t)=\alpha\int_{-\infty}^\infty \frac{\rho(\beta)}{2\beta\sinh(\beta/2)}~\mathrm{e}^{-i\beta t}~\mathrm{e}^{-\beta/2}~d\beta
 
   
-and the :math:`\rho(\beta)` is the phonon density of states. In the incoherent approximation, these are the equations that need to be solved to prepare thermal neutron scattering data.
+In the incoherent approximation, these are the equations that need to be solved to prepare thermal neutron scattering data for most solids.
 
 
 

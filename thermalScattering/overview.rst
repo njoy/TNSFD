@@ -6,7 +6,7 @@
 .. |EXAMPLE| image:: _images/temp.png
    :width: 1em
 
-.. _theory:
+.. _general_theory:
 
 **************************************
 Overview of Thermal Neutron Scattering

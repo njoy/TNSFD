@@ -14,7 +14,9 @@ Welcome to leapr's documentation!
    backgroundKeyEqs
    elasticVsInelastic 
    coherentElastic
-   SCT_etc
+   inelastic
+   skold
+   sct
    additional 
 ..   overview
    quickStart
