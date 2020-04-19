@@ -6,13 +6,13 @@
 .. |EXAMPLE| image:: _images/temp.png
    :width: 1em
 
-.. .. .. _theory:
+.. _coldh:
 
 ***********************************************
 Cold Hydrogen and Deuterium 
 ***********************************************
 
-In :ref:`inelastic_theory`, we made the assumption that spins are randomly distributed. This approximation is valid for most materials, but breaks down when describing liquid hydrogen and deuterium. To correct this error, quantum mechanical treatment is required to account for spin-spin correlations for atoms in the same molecule/structure.
+In :ref:`background_key_eqs`, we made the assumption that spins are randomly distributed. This approximation is valid for most materials, but breaks down when describing liquid hydrogen and deuterium. To correct this error, quantum mechanical treatment is required to account for spin-spin correlations for atoms in the same molecule/structure.
 
 For the remainder of this discussion, "hydrogen" will refer to the element, i.e. both :math:`^1\mathrm{H}` and :math:`^2\mathrm{D}`. 
 

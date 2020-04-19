@@ -12,7 +12,6 @@ Welcome to leapr's documentation!
 
    overview
    backgroundKeyEqs
-   elasticVsInelastic 
    coherentElastic
    inelastic
    vineyard

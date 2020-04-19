@@ -6,6 +6,7 @@
 .. |EXAMPLE| image:: _images/temp.png
    :width: 1em
 
+.. _background_key_eqs:
 
 **************************************
 Background of Key Equations
@@ -13,12 +14,16 @@ Background of Key Equations
 
 
 
-The double differential scattering cross section for thermal neutrons is comprised of a coherent component and an incoherent component,
+
+If a material's atoms have randomly distributed spins or isotope types, then the scattering of neutrons can be expressed as a sum of a coherent part and an incoherent part.
+.. cThe double differential scattering cross section for thermal neutrons is comprised of a coherent component and an incoherent component,
 
 .. The probability of a neutron with initial energy and solid angle scattering to have some final energy and solid angle :math:`(E',\Omega')` is described using the double differential scattering cross section :math:`\sigma(E\rightarrow E', \Omega\rightarrow\Omega')`. The scattering cross section has a coherent and an incoherent component, 
 
 .. math::
   \sigma(E\rightarrow E',\Omega\rightarrow\Omega') = \sigma_{inc}(E\rightarrow E',\Omega\rightarrow\Omega') + \sigma_{coh}(E\rightarrow E',\Omega\rightarrow\Omega').
+
+Note that the spin correlations of ortho and para hydrogen violate the assumption of randomness, so liquid hydrogen and deuterium must be desribed separetely. This will be covered in :ref:`coldh`.
 
 
 .. _background_coh_inc:
@@ -48,7 +53,9 @@ Naturally, the distinct component is significantly harder to compute, which is n
 
 Incoherent Approximation
 ======================================
-Modern thermal neutron scattering calculations typically rely on the **incoherent approximation**, which assumes that the distinct component of the pair distribution function :math:`G_d(\mathbf{r},t)` is negigible, meaning that the coherent scattering contribution has the same form as the incoherent contribution. This approximation allows us to simplify the scattering cross section equation to be
+Modern thermal neutron scattering calculations typically rely on the **incoherent approximation**, which assumes that the distinct component of the pair distribution function :math:`G_d(\mathbf{r},t)` is negigible, meaning that the coherent scattering contribution has the same form as the incoherent contribution. For gasses, liquids, and solids that contain randomly oriented crystallites, this assumption is typically valid. 
+
+The incoherent approximation allows us to simplify the scattering cross section equation to be
 
  .. math::
   \sigma(E\rightarrow E',\Omega\rightarrow\Omega') = \frac{\sigma_{b}}{4\pi\hbar}\sqrt{\frac{E'}{E}}\frac{1}{2\pi}\int_{-\infty}^\infty \int \mathrm{e}^{\epsilon t/\hbar-\mathbf{k}\mathbf{r}}~G_s(\mathbf{r},t)~d\mathbf{r}~dt
@@ -68,17 +75,20 @@ The cross section equation above is often represented in terms of the **scatteri
     \beta &=\frac{E'-E}{k_bT} = \frac{\epsilon}{k_bT}
   \end{aligned}
 
-Finally, the change in neutron angle is assumed to be isotropic in the azimuthal angle, meaning that we need only care about the scattering cosine :math:`\mu`, instead of the full change of solid angle. This allows our final scattering cross section to be represented as 
+Finally, the change in neutron angle is assumed to be isotropic in the azimuthal angle, meaning that we need only care about the scattering cosine (in the lab frame) :math:`\mu`, instead of the full change of solid angle. This allows our final scattering cross section (for gasses, liquids, and solids with randomly oriented crystallites) to be represented as 
 
 .. math::
-    \sigma(E\rightarrow E',\mu) = \frac{\sigma_b}{k_bT}\sqrt{\frac{E'}{E}}~S(\alpha,\beta)
+    \sigma(E\rightarrow E',\mu) = \frac{\sigma_b}{k_bT}\sqrt{\frac{E'}{E}}~S(\alpha,\beta).
     
-where for most solids, the scattering law is defined in terms of the phonon density of states :math:`\rho(\beta)`, 
+The main difficulty with preparing thermal neutron scattering data involves calculating the scattering law. How exactly the scattering is computed, will be discussed in [LINK TO LEAPR DOCUMENTATION].
 
-.. math::
-    S(\alpha,\beta) = \frac{1}{2\pi}\int_{-\infty}^\infty\mathrm{e}^{i\beta t}~\mathrm{e}^{\gamma(t)-\gamma(0)}~dt
 
-.. math::
+.. where for most solids, the scattering law is defined in terms of the phonon density of states :math:`\rho(\beta)`, 
+
+.. .. math::
+..     S(\alpha,\beta) = \frac{1}{2\pi}\int_{-\infty}^\infty\mathrm{e}^{i\beta t}~\mathrm{e}^{\gamma(t)-\gamma(0)}~dt
+
+.. .. math::
     \gamma(t)=\alpha\int_{-\infty}^\infty \frac{\rho(\beta)}{2\beta\sinh(\beta/2)}~\mathrm{e}^{-i\beta t}~\mathrm{e}^{-\beta/2}~d\beta
 
   
