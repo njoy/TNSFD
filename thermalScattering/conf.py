@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'leapr'
+project = 'Thermal Scattering'
 copyright = 'copyright stuff'
 author = 'author stuff'
 

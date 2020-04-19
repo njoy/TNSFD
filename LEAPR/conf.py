@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'NJOY'
+project = 'LEAPR'
 copyright = 'copyright stuff'
 author = 'author stuff'
 

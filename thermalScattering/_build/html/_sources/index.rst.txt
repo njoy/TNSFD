@@ -15,7 +15,8 @@ Welcome to leapr's documentation!
    elasticVsInelastic 
    coherentElastic
    inelastic
-   skold
+   vineyard
+   coldh
    sct
    additional 
 ..   overview

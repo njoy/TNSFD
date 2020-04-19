@@ -1,6 +1,6 @@
 
 **********************
-NJOY Examples 
+Quickstart
 **********************
 
 ..
@@ -20,7 +20,7 @@ Here, the first module name is specified, and the inputs are divided into "cards
 
 Lines of NJOY input files may not exceed 80 characters, so if an line of input needs multiple lines, they may do so (this is shown in Module 2 Card 3 above). Any characters folloring a single forawrd slash is considered a comment and will not be read as input.
 
-Many modules in NJOY cannot be called in isolation, as they require the output of some other module as input. LEAPR, however, can be called alone, as it does not require any auxiliary input files (just the input file is sufficient to call LEAPR).
+Many modules in NJOY cannot be called in isolation, as they require the output of some other module as input. 
 
 
 

@@ -11,20 +11,7 @@ Welcome to leapr's documentation!
    :caption: Contents:
 
    overview
-   backgroundKeyEqs
-   elasticVsInelastic 
-   coherentElastic
-   inelastic
-   vineyard
-   coldh
-   sct
-   additional 
-..   overview
    quickStart
-   usersGuide
-   codingDetails 
-
-
 
 Indices and tables
 ==================

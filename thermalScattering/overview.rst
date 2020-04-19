@@ -38,6 +38,9 @@ Two interesting phenomena come into play for thermal neutrons:
   Thermal neutrons can interact with many phonons of different energies, and the distribution of possible phonons that could exist in a material is represented in that material's phonon density of states.
 
 
+  Since thermal neutrons do not have sufficient energy to knock an atom from the material, any data prepared for a atom has to account for the material it belongs to. Thermal neutron scattering data must be prepared for "hydrogen in water", for example, instead of just for "hydrogen" in general.
+
+
 
 
 For more information regarding phonons and the importance of the phonon distribution in thermal neutron scattering, please see :ref:`Vibrational (Phonon) Denstiy of States<background_phonon_dos>`
