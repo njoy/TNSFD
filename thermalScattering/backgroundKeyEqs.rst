@@ -83,6 +83,42 @@ Finally, the change in neutron angle is assumed to be isotropic in the azimuthal
 The main difficulty with preparing thermal neutron scattering data involves calculating the scattering law. How exactly the scattering is computed, will be discussed in [LINK TO LEAPR DOCUMENTATION].
 
 
+
+
+For systems in thermal equilibrium, there is a relationship between upscatter and downscatter called "detail balanced", that is a consequence of microscopic reversibility. It requires that 
+
+.. math:: 
+  S(\alpha,\beta)=\mathrm{e}^{-\beta}~S(\alpha,-\beta)
+
+Note that liquid hydrogen and deuterium violate this condition. For convenience, some use the above relation to define the "symmetric scattering law" :math:`S_{sym}(\alpha,\beta)`, which is even in :math:`\beta`, 
+
+.. math:: 
+  S_{sym}(\alpha,\beta)=S_{sym}(\alpha,-\beta).
+
+In all equations used in the LEAPR and THERMR documentation, we will use the non-symmetric scattering law. 
+
+In addition, the scattering law satisfies two additional constraints:
+
+.. math::
+  \begin{align}
+  \mbox{Normalization}&\qquad\int_{-\infty}^\infty S(\alpha,\beta)~d\beta=1\\
+  \mbox{The Sum Rule }&\qquad\int_{-\infty}^\infty \beta~S(\alpha,\beta)~d\beta=-\alpha
+  \end{align}
+
+
+
+
+In these All we deal solely with the non-symmetric scattering law. It is related to the symmetric scattering law :math:`S_{sym}(\alpha,\beta)` by an exponential in :math:`\beta`:
+
+.. math:: 
+  S_{sym}(\alpha,\beta)=\mathrm{e}^{\beta/2}~S(\alpha,\beta)
+
+
+
+
+
+
+
 .. where for most solids, the scattering law is defined in terms of the phonon density of states :math:`\rho(\beta)`, 
 
 .. .. math::

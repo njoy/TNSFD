@@ -58,8 +58,6 @@ Elastic vs. Inelastic Scattering
 
 
 
-Definitions
-----------------
 Elastic scattering means that the total kinetic energy of the system (neutron plus target) is the same before and after the scattering collision. This is contrasted with inelastic scattering, where kinetic energy is not conserved. This change in energy is due to some excitation (or de-excitation) occurred. In terms of the scattering law, elastic scattering occurs when :math:`\beta=0`.
 
 In :ref:`background_coh_inc` , we said that accounting for coherence (i.e., that :math:`G_d(\mathbf{r},t)` term) is not typically done, as it is too complicated. However in the special case of elastic scattering, coherence can be considered if there exists an ordered lattice, etc. For more information on this treatment, please see :ref:`coh_elastic`.  
