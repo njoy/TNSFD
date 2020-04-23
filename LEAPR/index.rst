@@ -11,6 +11,7 @@ Welcome to leapr's documentation!
    :caption: Contents:
 
    overview
+   theory 
    quickStart
 
 Indices and tables
