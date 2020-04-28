@@ -47,7 +47,23 @@ where
   S^{(J)}(\alpha,\beta) = \int_{-\infty}^\infty S^{(J)}(\alpha,\beta')~S^{(J-1)}(\alpha,\beta-\beta')~d\beta'. 
 
 
-The Debye-Waller coefficients and effective temperatures of each contribution can be summed together to describe the full distribution.
+**Debye-Waller Coefficient**
+ 
+The Debye-Waller coefficient is a temperature-dependent quantity that is related to the average displacement of an atom from its equilibrium position. The full Debye-Waller coefficient :math:`\lambda` is the combination of the solid-type value :math:`\lambda_s` and and discrete oscillator values :math:`\lambda_i`,
+
+.. math::
+  \lambda = \lambda_s + \sum_{i=1}^{N_{osc}}\lambda_i.
+
+Note that the translational component is not represented in the Debye-Waller coefficient.
+
+**Effective Temperature**
+
+The effective temperature for all modes is defined as 
+
+.. math::
+  \overline{T} = \omega_t~T + \omega_s~\overline{T}_s+\sum_{i=1}^{N_{osc}}\omega_i\frac{\beta_i}{2}~\coth(\beta_i/2)~T
+
+where :math:`\omega_t,\omega_s,` and :math:`\omega_i` are the fractional weights for the translational piece, the solid-type piece, and each oscillator.
 
 
 -------------------------------------------------
@@ -218,25 +234,6 @@ where :math:`\omega_s` is the solid-type distribution weight.
 
 
 
-Discrete Oscillator (Einstein Crystal)
-----------------------------------------
-
-Polyatomic molecules normally contain a number of vibrational modes that can be approximated as discrete oscillators. These would appear in the phonon distribution as a Dirac-:math:`\delta` functions with some corresponding weight, :math:`\omega_{i}\delta(\beta_i)`.
-
-If there exist any peaks in the scattering law that the user wants to approximate as a :math:`\delta` function, the corresponding scattering law contribution :math:`S_d(\alpha,\beta)` can be computed as 
-
-.. math::
-  \begin{align}
-  S_{i}(\alpha,\beta)&=\mathrm{e}^{-\alpha\lambda_i}\sum_{n=-\infty}^\infty\delta(\beta-n\beta_i)~I_n\left[\frac{\alpha\omega_i}{\beta_i\sinh(\beta_i/2)}\right]~\mathrm{e}^{-n\beta_i\,/2}\\
-  &=\sum_{n=-\infty}^\infty A_{in}(\alpha)~\delta(\beta-n\beta_i)
-  \end{align}
-
-where the discrete oscillator Debye-Waller coefficient is defined as 
-
-.. math:: 
-  \lambda_i=\frac{\omega_i\,\coth(\beta_i/2)}{\beta_i}
-
-
 
 
 
@@ -289,9 +286,39 @@ was left out, to be handled separately. If a translational term is considered, t
 .. math::
   S(\alpha,\beta) = S_t(\alpha,\beta)~\mathrm{e}^{-\alpha\lambda_s} + \int_{-\infty}^\infty S_t(\alpha,\beta')~S_s(\alpha,\beta-\beta')~d\beta'
 
+Note that while doing this convolution, the values of the translational piece :math:`S_t(\alpha,\beta')` and the solid-type piece :math:`S_s(\alpha,\beta-\beta')` are precomputed and interpolated on.
+
+.. **Effective Temperature**
+
+.. If a translational component is considered, the effective temperature is updated as follows:
+
+.. .. math::
+  \overline{T}=\frac{\omega_t T+\omega_s\overline{T}_s}{\omega_t+\omega_s}
+
+
 .. The LEAPR module is used to prepare the thermal scattering law :math:`S(\alpha,\beta)`, which describes thermal scattering from bound moderators. 
 
 .. LEAPR uses the incoherent approximation for preparing the thermal scattering data. 
+
+
+
+Discrete Oscillator (Einstein Crystal)
+----------------------------------------
+
+Polyatomic molecules normally contain a number of vibrational modes that can be approximated as discrete oscillators. These would appear in the phonon distribution as a Dirac-:math:`\delta` functions with some corresponding weight, :math:`\omega_{i}\delta(\beta_i)`.
+
+If there exist any peaks in the scattering law that the user wants to approximate as a :math:`\delta` function, the corresponding scattering law contribution :math:`S_d(\alpha,\beta)` can be computed as 
+
+.. math::
+  \begin{align}
+  S_{i}(\alpha,\beta)&=\mathrm{e}^{-\alpha\lambda_i}\sum_{n=-\infty}^\infty\delta(\beta-n\beta_i)~I_n\left[\frac{\alpha\omega_i}{\beta_i\sinh(\beta_i/2)}\right]~\mathrm{e}^{-n\beta_i\,/2}\\
+  &=\sum_{n=-\infty}^\infty A_{in}(\alpha)~\delta(\beta-n\beta_i)
+  \end{align}
+
+where the discrete oscillator Debye-Waller coefficient is defined as 
+
+.. math:: 
+  \lambda_i=\frac{\omega_i\,\coth(\beta_i/2)}{\beta_i}
 
 
 
