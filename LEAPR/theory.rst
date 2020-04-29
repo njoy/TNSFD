@@ -374,6 +374,8 @@ Coherent Elastic Scattering
 
 If a material is comprised of strong coherent scatterers (e.g. graphite) where there is strong spatial correlation between atomic sites, the scattered neutron waves from zero-phonon collisions can interfere, creating **coherent elastic scattering**. Since a prerequisite for coherent elastic scattering is spatial correlation of atomic sites, this type of scattering is not considered for amorphous solids or liquids, only regular repeating strucures (e.g. FCC, BCC, HCP, etc.). For background information concerning coherent elastic scattering, please visit [LINK TO COHERENT ELASTIC PAGE IN THERMAL SCATTERING DIRECTORY].
 
+
+
 .. The differential coherent elastic scattering cross section is given by 
 
 .. .. math:: 
