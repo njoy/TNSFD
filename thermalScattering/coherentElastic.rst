@@ -57,7 +57,19 @@ The Bragg edges are the locations in energy where the coherent elastic cross sec
 .. math:: 
   \sigma_{coh}(E,\mu)=\frac{\sigma_c}{E}\sum_{E_i<E}f_i~\mathrm{e}^{-4W~E_i}~\delta(\mu-\mu_i). 
 
-It can be seen above that the coherent elastic cross section is zero below the first Bragg Edge (typicall 2-5 meV). It then jumps sharply to a value determined by :math:`f_1` and the Debye-Waller factor :math:`W`. With increasing neutron energy :math:`E`, the cross section drops off as :math:`1/E` until the second Bragg Edge is reached at :math:`E=E_2`. Again, the cross section jumps, and then resumes its :math:`1/E` drop off. The size of the steps in the cross section gradually get smaller, until there is nothing left but the aymptotic :math:`1/E` shape (which typically occurs near 1-2 eV).
+It can be seen above that the coherent elastic cross section is zero below the first Bragg Edge (typicall 2-5 meV). It then jumps sharply to a value determined by :math:`f_1` and the Debye-Waller factor :math:`W`. With increasing neutron energy :math:`E`, the cross section drops off as :math:`1/E` until the second Bragg Edge is reached at :math:`E=E_2`. Again, the cross section jumps, and then resumes its :math:`1/E` drop off. The size of the steps in the cross section gradually get smaller, until there is nothing left but the aymptotic :math:`1/E` shape (which typically occurs near 1-2 eV). This behavior is also illustrated in the following plot for graphite:
+
+.. figure:: _images/leceack.png
+   :width: 600
+   :alt: The coherent elastic cross section for graphite at temperatures of 293.6K and 2000K showing the Bragg peaks. 
+
+   
+   The coherent elastic cross section for graphite at temperatures of 293.6K (solid) and 2000K (dashed) showing the Bragg peaks.  Note that the 293.6K cross section near the 4 eV breakpoint is still an appreciable part of the 4.74 barn free cross section.
+
+
+
+
+
 
 As mentioned above, the Bragg Edge locations :math:`E_i` are
 
