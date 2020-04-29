@@ -20,7 +20,7 @@ The differential coherent scattering cross section is
 
 .. math:: 
   \begin{gather}
-  \sigma_{coh}(E,\mu)=\frac{\sigma_c}{E}\sum_{E_i<E}f_i~\mathrm{e}^{-4W~E_i}~\delta(\mu-\mu_i)|\\
+  \sigma_{coh}(E,\mu)=\frac{\sigma_c}{E}\sum_{E_i<E}f_i~\mathrm{e}^{-4W~E_i}~\delta(\mu-\mu_i)\\
   \mu_i = 1-\frac{E_i}{E}
   \end{gather}
 
