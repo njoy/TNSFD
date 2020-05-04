@@ -6,6 +6,7 @@ Theory
 ..
   COMMENT: .. contents:: Table of Contents
 
+.. _inelastic_scattering:
 
 Inelastic Scattering
 ======================

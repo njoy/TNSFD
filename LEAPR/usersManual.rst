@@ -155,6 +155,7 @@ d. :code:`nsk` [**default = 0 (none)**] - This should be set to 0 unless represe
 Note that if you only have a principal scatterer and no secondary scatterers, Card 6 entry line should simply consist of :code:`0/`.
 
 a. :code:`nss` - Number of secondary scatterers
+
    Possible values include:
        0 - No secondary scatterers
 
@@ -188,17 +189,28 @@ b. :code:`nbeta` - Number of :math:`\beta` values that will be provided in Card 
 c. :code:`lat` [**default=0**] - Flag that indicates whether the :math:`\alpha` and :math:`\beta` values are scaled by :math:`0.0253/k_bT`, where :math:`k_bT` is the temperature in eV.
 
 
+In the ENDF thermal format, the values for :math:`S(\alpha,\beta)` for higher temperatures are given on the same :math:`\alpha` and :math:`\beta` grids as is provided for the base temperature. However, :math:`\alpha` and :math:`\beta` are inversely proportional to temperature, so for high temperatures only the smaller :math:`\alpha` and :math:`\beta` values would be seen. This is a waster of space on the ENDF evaluation, so using a :code:`lat` value of 1 would spread the scattering law values for higher temperatures out, thereby giving a more accurate representation.
+
+
+
 
 8 - :math:`\alpha` Values
 ----------------------------------------------------------------
 :math:`\alpha` values are provided here in increasing order.
 
+   Restrictions include:
+       The number of :math:`\alpha` values provided must match the :code:`nalpha` input from Card 7.
 
 
 
 9 - :math:`\beta` Values
 ----------------------------------------------------------------
 :math:`\beta` values are provided here in increasing order.
+
+   Restrictions include:
+       The number of :math:`\beta` values provided must match the :code:`nbeta` input from Card 7.
+
+
 
 
 
@@ -215,63 +227,107 @@ For a given iteration in this temperature loop, Card 10 consists solely of the t
 
 11 - Phonon Distribution Control
 ----------------------------------------------------------------
-a. :code:``
+
+The phonon distribution for the continuous, solid-type spectrum treatment is provided on an equally-spaced grid. 
+
+a. :code:`delta` - Spacing of the phonon distribution (ev). Since the phonon distribution is provided on an equally spaced grid, this is a single value.
+
+b. :code:`ni` - Number of phonon distribution values that will be provided on Card 12.
 
 
 
 12 - Phonon Distribution
 ----------------------------------------------------------------
-a. :code:``
+The phonon distribution is provided here. The phonon distribution does not need to be normalized, it will be normalized by LEAPR to the continuous, solid-type weight :math:`\omega_s`.
+
+   Restrictions include:
+       This distribution must be provided on an equally spaced grid, with the energy spacing equal to :code:`delta` from Card 11.
+       The number of values provided here must match the :code:`ni` input from Card 11.
 
 
 
 
-13 - Translational and Continuout Weights
+
+13 - Translational Control and Continuout Weight
 ----------------------------------------------------------------
-a. :code:``
+As mentioned in :ref:`inelastic_scattering`, the phonon distribution is separated into a continuous contribution, and optional translational contribution, and an arbitrary number of discrete oscillators. 
+
+a. :code:`twt` - Weight for the translational/diffusive contribution (:math:`\omega_t`)
+b. :code:`c` - Diffusion constant for translational component. 
+
+    Notes:
+        If :code:`twt` is equal to zero, :code:`c` can be set to zero
+
+        If :code:`twt` is greater than zero, then a setting :code:`c` to zero corresponds to a free gas translational calculation.
+c. :code:`tbeta` - Weight for the continuous, solid-type spectrum (:math:`\omega_s`). 
+
+
+
+Restrictions include:
+       The translational weight :code:`twt`, the continuous, solid-type weight :code:`tbeta`, and the discrete oscillator weights (Card 14) must sum to 1.0.
 
 
 
 
 14 - Discrete Oscillator Control
 ----------------------------------------------------------------
-a. :code:``
+:code:`nd` - Number of discrete oscillators desired
 
 
 
 15 - Discrete Oscillator Energies
 ----------------------------------------------------------------
-a. :code:``
+Energy locations (in eV) for the discrete oscillators. 
+
+Restrictions include:
+    Must be :code:`nd` entries here. 
 
 
 
 16 - Discrete Oscillator Weights
 ----------------------------------------------------------------
-a. :code:``
+Weights of the discrete oscillators.
+
+Restrictions include:
+    Must be :code:`nd` entries here. 
+
+    The translational weight :code:`twt`, the continuous, solid-type weight :code:`tbeta` (Card 13), and the discrete oscillator weights here must sum to 1.0.
+
 
 
 
 17 - Static Structure Factor Control
 ----------------------------------------------------------------
-a. :code:``
+This card is only given for liquid hydrogen or liquid deuterium cases. It controls the entry of the pair-correlation function used to account for intermolecular interference at very low neutron energies. 
+
+a. :code:`nka` - Number of :math:`S(\kappa)` values that will be provided on Card 18.
+b. :code:`dka` - :math:`\kappa` spacing for the :math:`S(\kappa)` entry on Card 18.
+
+Restrictions include:
+    Note that :code:`dka` is in units of inverse Angstrom
 
 
 
 18 - Static Structure Factor
 ----------------------------------------------------------------
-a. :code:``
+Static structure factor (pair correlation function) :math:`S(\kappa)` is provided here. 
+
+Restrictions include:
+    These values should correspond to an equally spaced, increasing :math:`\kappa` grid. 
+    
+    :math:`\kappa` is in units of inverse Angstrom.
 
 
 
 19 - Coherent Scattering Fraction
 ----------------------------------------------------------------
-a. :code:``
+:code:`cfrac` - Coherent scattering fraction. This is only invoked if :code:`nsk` from Card 5 is equal to 2.
 
 
 
 20 - Comments 
 ----------------------------------------------------------------
-a. :code:``
+The final section of the input deck gives the new comment cards to be added to the section MF=1/MT=451 on the ENDF file generated by LEAPR. If this section is to be a part of a standard library like ENDF/B-VII, there are standard fields that must appear. An example of the appearance of such a formal section will be found in the graphite example below. Note that the comment cards are terminated by an empty card; the number of cards entered is counted by LEAPR.
 
 
 
