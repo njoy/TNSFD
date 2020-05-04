@@ -98,7 +98,7 @@ e. :code:`smin` [**default = 1e-75**] - Scattering law values lower than this wi
 ----------------------------------------------------------------
 The "principal scatterer" may be hard to select for materials. For :math:`\mbox{H}_2\mbox{O}`, it's :math:`\mbox{H}`. For :math:`\mbox{ZrH}`, it would be :math:`H` for :code:`mat=7` and :math:`\mbox{Zr}` for :code:`mat=58`. For mixed moderators like :math:`\mbox{BeO}`, it is typically the lighter material. 
 
-a. :code:`awr` - Neutron, principal scatterer weight ratio
+a. :code:`awr` - Atomic weight ratio between the neturon and the principal scatterer.
 
 b. :code:`spr` - Free atom cross section for preincipal scatterer (in units of barns). This value should be chosen by looking at the low-energy limit for MF=3/MT=2 (elastic scattering) on the neutron file to be used with the new evaluation.
 
@@ -152,33 +152,63 @@ d. :code:`nsk` [**default = 0 (none)**] - This should be set to 0 unless represe
 
 6 - Secondary Scatterer Information
 ----------------------------------------------------------------
-a. :code:``
+Note that if you only have a principal scatterer and no secondary scatterers, Card 6 entry line should simply consist of :code:`0/`.
+
+a. :code:`nss` - Number of secondary scatterers
+   Possible values include:
+       0 - No secondary scatterers
+
+       1 - 1 secondary scatterer type
+       
+b. :code:`b7` - Flag indicating the treatment that will be applied to the secondary scatterer.
+
+   Possible values include:
+       0 - SCT approximation. This is most suitable for mixed moderators such as BeO and Benzine. In these cases, the entire scattering law for the molecule is provideded in MF=7/MT=4, and is intended to be used with the neutron file for the primary scatterer. The secondary scatterer's cross section, atomic weight ratio, and effective temperature are only used for extrending the scattering law with the SCT approximation. 
+
+       1 - Free gas approximation. 
+
+       2 - Diffusion Model
+ 
+    When :code:`b7` is 1 or 2, only the scattering law for the primary scatterer is given, and the effects of the secondary scatterer are to be included later using an analytic law. 
+
+
+c. :code:`aws` - Atomic weight ratio between the neturon and the secondary scatterer.
+
+
+d. :code:`sps` - Free atom cross section for the secondary scatterer (units of barns).
+
+e. :code:`mss` -  Number of secondary scatter atoms of this type in the compound. For :math:`\mbox{H}_2\mbox{O}`, the secondary scatterer would be :math:`\mbox{O}` and :code:`mss` would be equal to 1.
 
 
 
 7 - :math:`\alpha,\beta` Input
 ----------------------------------------------------------------
-a. :code:``
+a. :code:`nalpha` - Number of :math:`\alpha` values that will be provided in Card 9
+b. :code:`nbeta` - Number of :math:`\beta` values that will be provided in Card 8
+c. :code:`lat` [**default=0**] - Flag that indicates whether the :math:`\alpha` and :math:`\beta` values are scaled by :math:`0.0253/k_bT`, where :math:`k_bT` is the temperature in eV.
 
 
 
 8 - :math:`\alpha` Values
 ----------------------------------------------------------------
-a. :code:``
+:math:`\alpha` values are provided here in increasing order.
 
 
 
 
 9 - :math:`\beta` Values
 ----------------------------------------------------------------
-a. :code:``
+:math:`\beta` values are provided here in increasing order.
 
 
 
 
 10 - Temperature
 ----------------------------------------------------------------
-a. :code:``
+For inputs with more than one temperature (:code:`ntempr` :math:`>0`), LEAPR uses a temperature loop, where Cards 10-18 are repeated for each temperature. Further explanaion of the temperature loop is provided below. 
+
+For a given iteration in this temperature loop, Card 10 consists solely of the temperature in Kelvin.
+
 
 
 
