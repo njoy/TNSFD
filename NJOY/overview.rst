@@ -13,6 +13,10 @@ The NJOY Nuclear Data Processing System is a comprehensive computer code package
 The NJOY code consists of a set of 24 main modules, each performing a well-defined processing task. These modules are essentially separate computer programs, that can interact with each other by input and output files. The modules are supported by a number of subsidiary modules providing things like physics constants, utility routines, and mathematics subroutines that can be “used” by the main modules. 
 
 
+Tapes
+=====================
+
+In NJOY, unit numbers from 20 through 99 are used for storing results or linking modules, units 10 through 19 are reserved for scratch files, which will be destroyed after a module has completed its job, and units below 10 are reserved for the system. Negative unit numbers indicate binary mode.
 
 
 

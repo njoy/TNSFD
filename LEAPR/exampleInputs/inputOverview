@@ -1,0 +1,98 @@
+
+   !----- user input (free format) ---------------------------------
+   !
+   ! card 1 - units
+   !    nout     endf output unit for thermal file
+   !
+   ! card 2 - title
+   !
+   ! card 3 - run control
+   !    ntempr  number of temperatures (def=1)
+   !    iprint  print control (0=min, 1=more, 2=most, def=1)
+   !    nphon   phonon-expansion order (def=100)
+   !
+   ! card 4 - endf output control
+   !    mat     endf mat number
+   !    za      1000*z+a for principal scatterer
+   !    isabt   sab type (0=symmetric, 1=asymmetric, def=0)
+   !    ilog    log flag (0=s, 1=log10(s), def=0)
+   !    smin    minimum S(alpha, beta) stored in file (def=1e-75)
+   !
+   ! card 5 - principal scatterer control
+   !    awr     weight ratio to neutron for principal scatterer
+   !    spr     free atom cross section for principal scatterer
+   !    npr     number of principal scattering atoms in compound
+   !    iel     coherent elastic option
+   !                   0  none (default)
+   !                   1  graphite
+   !                   2  beryllium
+   !                   3  beryllium oxide
+   !                   4  aluminum
+   !                   5  lead
+   !                   6  iron
+   !    ncold   cold hydrogen option
+   !                   0   none (default)
+   !                   1   ortho hydrogen
+   !                   2   para hydrogen
+   !                   3   otho deuterium
+   !                   4   para deuterium
+   !    nsk            0   none (default)
+   !                   1   vineyard
+   !                   2   skold
+   !
+   ! card 6 - secondary scatterer control
+   !    nss     number of secondary scatterers (0 or 1)
+   !    b7      secondary scatterer type
+   !             (0=sct only, 1=free, 2=diffusion)
+   !    aws     weight ratio to neutron for secondary scatterer
+   !    sps     free atoms cross section for secondary scatterer
+   !    mss     number of atoms of this type in the compound
+   !
+   ! card 7 - alpha, beta control
+   !    nalpha   number of alpha values
+   !    nbeta    number of beta values
+   !    lat      if lat.eq.1, alpha and beta values are scaled
+   !               by .0253/tev, where tev is temp in ev.  (def=0)
+   !
+   ! card 8 - alpha values (increasing order)
+   ! card 9 - beta values (increasing order)
+   !
+   ! scatterer loop, do temperature loop for principal scatterer.
+   !         repeat for secondary scatterer (if any) if b7=0.
+   !
+   ! temperature loop, repeat cards 10 to 18 for each temperature
+   !
+   !    card 10 - temperature (k)
+   !       a negative value means skip cards 11 to 18,
+   !          thereby using previous parameters for this temp.
+   !
+   !    card 11 -- continuous distribution control
+   !       delta    interval in ev
+   !       ni       number of points
+   !
+   !    card 12 -- rho(energy) (order of increasing ev)
+   !
+   !    card 13 - continuous distribution parameters
+   !       twt       translational weight
+   !       c         diffusion constant (zero for free gas)
+   !       tbeta     normalization for continuous part
+   !
+   !    card 14 - discrete oscillator control
+   !       nd     number of discrete oscillators
+   !
+   !    card 15 - oscillator energies (ev)
+   !    card 16 - oscillator weights (sum to 1.-tbeta-twt)
+   !
+   !    card 17 - pair correlation control (nsk.ne.0 only)
+   !       nka     number of kappa values
+   !       dka     kappa increment (inv. angstroms)
+   !
+   !    card 18  skappa values in increasing order (inv. ang.)
+   !
+   !    card 19  coherent scattering fraction for nsk.eq.2 only
+   !       cfrac   coherent fraction
+   !
+   ! card 20 - file 1 comments, repeat until blank line is read.
+   !
+   !-------------------------------------------------------------------
+

@@ -13,6 +13,8 @@ Welcome to leapr's documentation!
    overview
    theory 
    quickStart
+   usersManual
+   codingDetails
 
 Indices and tables
 ==================
