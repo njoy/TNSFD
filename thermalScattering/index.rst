@@ -14,7 +14,7 @@ Welcome to leapr's documentation!
    backgroundKeyEqs
    coherentElastic
    inelastic
-   vineyard
+   skold
    coldh
    sct
    additional 

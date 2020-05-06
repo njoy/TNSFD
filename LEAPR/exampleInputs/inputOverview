@@ -17,7 +17,7 @@ Temperature loop (do ntemp (# temperatures, Card 3) iterations:
 
     Read temperature from Card 10
 
-    If this is first temperature, or if temperature < 0:
+    If this is first temperature, or if temperature > 0:
 
         Read Cards 11 - 14
 

@@ -12,8 +12,11 @@
 Coherent Inelastic Approximations
 ***********************************************
 
-Vineyard Approximation
+Skold
 ========================
+
+.. Vineyard Approximation
+.. ========================
 
 .. While preparing the scattering law (for inelastic thermal scattering processes), it is standard to use the incoherent approximation. As introduced in :ref:`incoherent_approximation`, the incoherent approximation neglects the distinct contribution of the pair distribution function, which neglects interference between different atoms. In reality, however, scattered from different molecules do interfere, which results when there is a correlation between the positions of nearby molecules. This kind of coherence is described by the "static structure factor" :math:`S(\kappa)`. This quantity can be used the **Vineyard Approximation**,
 
@@ -29,7 +32,7 @@ Vineyard Approximation
 
 While preparing the scattering law (for inelastic thermal scattering processes), it is standard to use the incoherent approximation. As introduced in :ref:`incoherent_approximation`, the incoherent approximation neglects the distinct contribution of the pair distribution function, which neglects interference between different atoms. 
 
-Intermolecular interference occurs when there is both a significant bound coherent scattering cross section (property of the atoms) as well as some correlation between the positions of nearby molecules (property of the lattice). If these requirements are met, coherent scattering may become non-negligible, at which point its effect can be accounted for by using the **Vineyard** approximation. 
+Intermolecular interference occurs when there is both a significant bound coherent scattering cross section (property of the atoms) as well as some correlation between the positions of nearby molecules (property of the lattice). If these requirements are met, coherent scattering may become non-negligible, at which point its effect can be accounted for by using the **Skold** approximation. 
 
 
 
