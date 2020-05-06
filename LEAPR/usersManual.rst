@@ -335,20 +335,94 @@ The final section of the input deck gives the new comment cards to be added to t
 
 
 
+****************************
+Structure of LEAPR
+****************************
 
-
-
-
-
-
-
-
-
-
+The general structure of the LEAPR source code is displayed below. This is not only helpful for understanding the code itself, but also in understanding the input formats. 
 
 
 .. literalinclude:: exampleInputs/inputOverview
+   :emphasize-lines: 6,18,22,25,29,32
+   :language: none
+   :linenos:
+   :lineno-start: 0
+
+.. .. literalinclude:: exampleInputs/inputOverview
    :language: html
+   :emphasize-lines: 12,15-18
 ..    :lines: 1-3
+
+
+There are a number of inputs that have the potential to change the structure of the LEAPR input file. We will walk through the ways in which the structure of the input file may vary according to calculations performed. 
+
+
+The inputs that can alter the format of the input file are 
+
+  ========================  ===============  =============
+  Trait                     Dictated by...   Affects...
+  ========================  ===============  =============
+  Multiple Temperatures     :code:`ntempr`   Cards 10-19
+  Discrete Oscillators      :code:`nd`       Cards 14-15
+  Molecular Interference    :code:`nsk`      Cards 18-19
+  Cold Hydrogen/Deuterium   :code:`ncold`    Card  18
+  ========================  ===============  =============
+
+
+
+
+Simplified Water Example
+===========================
+
+This example is a simplification of the "tsl-HinH2O.leapr" example from the ENDF-B/VIII.0 Thermal Scattering sublibrary. This example has been greatly simplified, and is intended only for instructional purposes. 
+
+In this example, three temperatures are desired: 283.6 K, 350 K, and 600 K. The temperature loop (Cards 10-19) may be repeated in the input file. After the first iteration of the temperature loop, the any subsequent temperatures may be input as negative values to indicate that Cards 111-19 will be identical as the earlier values provided. In this example, we will not use this feature, but will rather provide Cards 11-19 separately for each temperature.
+
+This water input uses discrete oscillators to represent two high energy peaks in the phonon distribution, so :code:`nd` from Card 14 is greater than 1. When this occurs, Cards 15-16 must be provided to detail the locations and weights of these oscillators.
+
+If both molecular interference and cold-hydrogen/deuterium options are not used, then Cards 17-19 are not necessary, and can be omitted.
+
+To summarize,
+
+  ========================  ==========  =========================
+  Trait                     Present?    Effect
+  ========================  ==========  =========================
+  Multiple Temperatures     Yes         Cards 10-19 get repeated
+  Discrete Oscillators      Yes         Cards 15-16 are used
+  Molecular Interference    No          No Cards 17-18
+  Cold Hydrogen/Deuterium   No          No Cards 17-19
+  ========================  ==========  =========================
+
+
+.. literalinclude:: exampleInputs/endf8_water_simple
+   :language: none
+   :linenos:
+   :lineno-start: 0
+
+
+Let's walk through what is happening. First, as always, Cards 1-9 are read. These cards will never be repeated for a single LEAPR run. 
+
+.. literalinclude:: exampleInputs/endf8_water_simple
+   :language: none
+   :linenos:
+   :lines: 1-10
+   :lineno-start: 0
+
+Note that in these first nine cards, we specify that we will be wanting scattering data for three temperature (:code:`ntempr` (Card 3) is 3), that we need no molecular interference or cold hydrogen/deuterium consideration (:code:`nsk` and :code:`ncold` (Card 5) are zero).
+
+Let's now go through our first temperature loop:
+
+.. literalinclude:: exampleInputs/endf8_water_simple
+   :language: none
+   :lineno-start: 10
+   :linenos:
+   :lines: 11-21
+
+
+We specify the temperature on Card 10 (since this is the first iteration, the temperature must be posibtively valued here). The phonon distribution for the continuous calculation is provided on Cards 11-12, and the translational/diffusive parameters are provided on Card 13. 
+
+Card 14 shows :code:`nd` equal to two, meaning that we have to account for two discrete oscillators. The existence of oscillators mandates the use of Cards 15-16, since that's where the oscillator positions/weights are specified. 
+
+Note that while technically the temperature loop extends from Card 10 to Card 19, Cards 17-19 are not used because they are useful for molecular interference / cold hydrogen, neither of which are necessary due to the aforementioned Card 5 inputs.
 
 

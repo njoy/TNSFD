@@ -12,8 +12,8 @@ Welcome to leapr's documentation!
 
    overview
    theory 
-   quickStart
    usersManual
+   quickStart
    codingDetails
 
 Indices and tables

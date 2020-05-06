@@ -1,0 +1,26 @@
+Lets assume that ntemps (# temperatures, Card 3) is equal to 3, and you want
+ to process data for three different temperatures: 296 K, 300 K, and 600 K.
+ Since the first two temperatures are so close to each other, you decide
+ to use the same phonon distribution information for them. 
+
+
+Card 1  - nout
+Card 2  - title
+Card 3  - ntempr    iprint    nphon
+Card 4  - mat       za        isabt    ilog    smin
+Card 5  - awr       spr       npr      iel     ncold     nsk
+Card 6  - nss       b7        aws      sps     mss     
+Card 7  - nalpha    nbeta     lat
+Card 8  - alpha 
+Card 9  - beta  
+Card 10 - temperature (must be positive value)
+Card 11 - delta     ni
+Card 12 - rho
+Card 13 - twt       c         tbeta
+Card 14 - nd
+Card 15 - oscEnergies
+Card 16 - oscWeights 
+Card 17 - nka       dka
+Card 18 - S(k)
+Card 19 - cfrac
+Card 20 - Comments

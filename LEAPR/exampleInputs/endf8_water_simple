@@ -1,0 +1,48 @@
+leapr
+24                                 / Card 1  NOUT
+'H in H2O, Simplified'             / Card 2  TITLE
+3 2 200                            / Card 3  NTEMPR IPRINT IPHON
+1 1001 0 0 2E-38                   / Card 4  MAT ZA ISABT ILOG SMIN
+0.9991673 20.43608 2 0 0 0         / Card 5  AWR SPR NPR IEL NCOLD NSK
+1 1 15.85751 3.7939 1              / Card 6  NSS B7 AWS SPS MSS
+3 4  1                             / Card 7  NALPHA NBETA LAT
+0.1 1.0 10.0                       / Card 8  ALPHA 
+0.0 0.5  5.0 15.0                  / Card 9  BETA 
+283.6                              / Card 10 TEMP #1
+0.00785631 19                      / Card 11 DELTA NI
+0.          1.83186463 1.276404   1.80192953 
+2.33194447 2.36821321 3.68076032 6.15402321 
+8.34570742 8.39010968 7.36513889 6.19696647 
+5.09384889 4.00022284 3.091738   1.94056432 
+0.96177264 0.61926568 0.49744076   / Card 12 RHO (phonon dist. for 283.6 K)
+6.9210E-03 3.5910E+00 5.2308E-01   / Card 13 TWT C TBETA  
+2                                  / Card 14 ND      
+2.0500E-01 4.1500E-01              / Card 15 OSC_ENERGIES
+1.5667E-01 3.1333E-01              / Card 16 OSC_WEIGHTS
+350                                / Card 10 TEMP #2
+0.00785631 19                      / Card 11 DELTA NI
+0.          1.87576674 1.84489684 2.39642363 
+3.02754121 3.66870753 5.123903   6.83786684 
+7.60033321 7.32040053 6.48581042 5.55441042
+4.53404163 3.56052758 2.71100179 1.72857116 
+1.01895812 0.71492591 0.57603389   / Card 12 RHO (phonon dist. for 350 K)
+1.1100E-02 8.1874E+00 5.1890E-01   / Card 13 TWT C TBETA  
+2                                  / Card 14 ND      
+2.0500E-01 4.1500E-01              / Card 15 OSC_ENERGIES 
+1.5667E-01 3.1333E-01              / Card 16 OSC_WEIGHTS
+600                                / Card 10 TEMP #3
+0.008293 19                        / Card 11 DELTA NI
+0.         3.13156911 4.38501533 5.87480933 
+6.77988778 7.04755456 6.703251   6.01895511 
+5.14559156 4.281869   3.43153311 2.58251711
+1.77168    1.22080189 0.90367994 0.72159883 
+0.61244529 0.55522773 0.5458042    / Card 12 RHO (phonon dist. for 600 K) 
+2.3840E-02 2.6832E+01 5.0616E-01   / Card 13 TWT C TBETA  
+2                                  / Card 14 ND      
+2.0500E-01 4.1500E-01              / Card 15 OSC_ENERGIES
+1.5667E-01 3.1333E-01              / Card 15 OSC_WEIGHTS
+' Now that we have completed our temperature '
+' loop for all three temperatures, we can    '
+' relax and write comments in these lines    '
+/
+stop
