@@ -3,22 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to leapr's documentation!
+The LEAPR Module of NJOY
 =====================================
 
+LEAPR and THERMR are two NJOY modules designed to generate thermal neutron scattering data. LEAPR's primary function is to calculate the thermal neutron scattering law, while THERMR formats the scattering data into the appropriate cross section formats. Here, we introduce the theory of thermal neutron scattering, how the LEAPR module works, and go through basic examples illustrating LEAPR's capabilities.
+
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 1
    :caption: Contents:
 
-   overview
-   theory 
+   overview/overview
+   theory/index
    usersManual
    quickStart
    codingDetails
 
-Indices and tables
-==================
+.. Indices and tables
+.. ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`

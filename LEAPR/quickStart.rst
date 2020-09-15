@@ -52,7 +52,7 @@ This example serves as a *very* simplified input that would allow a user to prep
 
 - Here, we want to process the material at a single temperature, so the number of temperatures is set to 1. 
 - In addition to the output file (for us, tape24), NJOY also returns a summary output file, which is traditionally labeled "output". To control the amount of detail used when preparing this document, the second input of card 3 is the print control option. This value can be (0,1,2) which indicate increasing level of detail. 
-- Every LEAPR run requires that the incoherent scattering component be calculated via phonon expansion method (discrete oscillators and/or diffusive behavior can be included, if requested). Thus, the final input value is the phonon expansion number, which indicates the number of terms :math:`N` that should be computed when approximating the sum in [EQUATION SECTION ETC]. 
+- Every LEAPR run requires that the incoherent scattering component be calculated via phonon expansion method (discrete oscillators and/or diffusive behavior can be included, if requested). Thus, the final input value is the phonon expansion number, which indicates the number of terms :math:`N` that should be computed when approximating the sum in :ref:`the phonon expansion method<continuous_solid_type>`.
 
 .. math:: 
     S^{(s)}_{n.sym}(\alpha,\beta) \approx \mathrm{e}^{-\alpha\lambda_s}\sum_{n=0}^N \frac{\alpha^n}{n!} W_n(\beta)

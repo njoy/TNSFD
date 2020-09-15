@@ -15,7 +15,7 @@ In the incoherent approximation, the thermal scattering cross section is defined
 where :math:`S(\alpha,\beta)` is the thermal scattering law. The purpose of LEAPR is to prepare the scattering law (along with Bragg edges, Debye-Waller factors, etc.) for further use by supplementary codes like the THERMR module. 
 
 
-As mentioned in [LINK TO THERMAL SCATTERING DATA], thermal neutron scattering can be categorized as either elastic or inelastic, both of which can have coherent and incoherent contributions. Modern thermal scattering data processing typically combines coherent inelastic with incoherent inelastic in what is called the incoherent approximation.
+Thermal neutron scattering can be categorized as either elastic or inelastic, both of which can have coherent and incoherent contributions. Modern thermal scattering data processing typically combines coherent inelastic with incoherent inelastic in what is called the incoherent approximation.
 
 
 With this approximation, NJOY is prepared to handle the following thermal scattering types:

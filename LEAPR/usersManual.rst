@@ -335,9 +335,8 @@ The final section of the input deck gives the new comment cards to be added to t
 
 
 
-****************************
 Structure of LEAPR
-****************************
+===========================
 
 The general structure of the LEAPR source code is displayed below. This is not only helpful for understanding the code itself, but also in understanding the input formats. 
 
@@ -371,12 +370,12 @@ The inputs that can alter the format of the input file are
 
 
 
-Simplified Water Example
-===========================
+Example - Verbose Temperature Loop
+-------------------------------------
 
 This example is a simplification of the "tsl-HinH2O.leapr" example from the ENDF-B/VIII.0 Thermal Scattering sublibrary. This example has been greatly simplified, and is intended only for instructional purposes. 
 
-In this example, three temperatures are desired: 283.6 K, 350 K, and 600 K. The temperature loop (Cards 10-19) may be repeated in the input file. After the first iteration of the temperature loop, the any subsequent temperatures may be input as negative values to indicate that Cards 111-19 will be identical as the earlier values provided. In this example, we will not use this feature, but will rather provide Cards 11-19 separately for each temperature.
+In this example, three temperatures are desired: 283.6 K, 350 K, and 600 K. The temperature loop (Cards 10-19) may be repeated in the input file. After the first iteration of the temperature loop, the any subsequent temperatures may be input as negative values to indicate that Cards 111-19 will be identical as the earlier values provided. In this example, we will not use this feature, but will rather provide Cards 11-19 separately for each temperature (hence the title, "verbose").
 
 This water input uses discrete oscillators to represent two high energy peaks in the phonon distribution, so :code:`nd` from Card 14 is greater than 1. When this occurs, Cards 15-16 must be provided to detail the locations and weights of these oscillators.
 
