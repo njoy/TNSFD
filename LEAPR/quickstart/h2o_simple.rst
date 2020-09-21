@@ -3,13 +3,8 @@
 
 .. demo.rst from: http://docutils.sourceforge.net/docs/user/rst/demo.txt
 
-.. |EXAMPLE| image:: _images/temp.png
-   :width: 1em
-
-**********************
-QuickStart
-**********************
-
+.. .. |EXAMPLE| image:: _images/temp.png
+..    :width: 1em
 
 
 Simple Hydrogen in Water
@@ -44,7 +39,7 @@ This example serves as a *very* simplified input that would allow a user to prep
 
 -------------------------------------------------------------------------------
 
-**Cards 3**
+**Card 3**
 
 .. literalinclude:: exampleInputs/simple_H_H2O
    :language: html
@@ -183,7 +178,7 @@ This example serves as a *very* simplified input that would allow a user to prep
   .. math:: 
     S_{n.sym}(\alpha,\beta)=\mathrm{e}^{-\beta}~S_{n.sym}(\alpha,-\beta)
 
- Lastly, it is worth nothing that if a value of 1 is chosen here (indicating a non-symmetric scattering law), that the output file **cannot** be processed by the THERMR module.
+ Lastly, it is worth nothing that if a value of 1 is chosen here (indicating a non-symmetric scattering law), that the output file **cannot** be processed by the THERMR module. [MAKE SURE THAT THIS IS CORRECT]
 
 - The fourth entry on card 4 is a flag for whether the output file should contain :math:`S(\alpha,\beta)` or :math:`\mbox{log}_{10}\big[S(\alpha,\beta)\big]` (which correspond to an entry value of 0 or 1, respectively). Writing results in log form is a standard ENDF approach of handling very small numbers for thermal scattering.  
 
@@ -241,13 +236,16 @@ This card is focused on the secondary scatterer, if applicable.
 
 .. literalinclude:: exampleInputs/simple_H_H2O
    :language: html
-   :lines: 1-12
+   :lines: 1-20
 
 LEAPR prepares the scattering law :math:`S(\alpha,\beta)` for a user-defiend grid of :math:`\alpha` and :math:`\beta` values. 
 
 - Card 7 defines the number of :math:`\alpha` values (22), the number of :math:`\beta` values (28) and whether the :math:`\alpha,\beta` grids should be scaled. If the scaling option is set to 0, neither grid is scaled. Since it is set to 1, however, both grids will be scaled by :math:`0.0253/k_bT` where :math:`k_bT` is the temperature in eV. 
 
-- Card 8 provides the :math:`\alpha` values, and Card 9 provides the :math:`\beta` values.
+- Card 8 provides the :math:`\alpha` values, and Card 9 provides the :math:`\beta` values. For lines with many values of inputs, such as Cards 8 and 9 here, the input values can span multiple lines since LEAPR was already informed of the number of :math:`\alpha` and :math:`\beta` values to expect in Card 7.
+
+
+Note that, as seen above, a blank line can be added between lines of LEAPR input to separate cards. 
 
 -------------------------------------------------------------------------------
 
@@ -255,7 +253,7 @@ LEAPR prepares the scattering law :math:`S(\alpha,\beta)` for a user-defiend gri
 
 .. literalinclude:: exampleInputs/simple_H_H2O
    :language: html
-   :lines: 1-20
+   :lines: 1-37
 
 - Card 10 provides the desired temperature in K.
 
@@ -272,7 +270,7 @@ LEAPR prepares the scattering law :math:`S(\alpha,\beta)` for a user-defiend gri
 
 .. literalinclude:: exampleInputs/simple_H_H2O
    :language: html
-   :lines: 1-21
+   :lines: 1-38
 
 When processing incoherent scattering, LEAPR processes the vibrational frequency spectrum from Card 12 in the phonon expansion. If requested, two additional effects can be considered: the effect of discrete ocsillators and the effect of some diffusive behavior. Card 13 defines how much, if any, attention should be paid to the diffusive nature of the material.
 
@@ -292,7 +290,7 @@ According to these input, the translative/diffusive behavior will be weighted by
 
 .. literalinclude:: exampleInputs/simple_H_H2O
    :language: html
-   :lines: 1-24
+   :lines: 1-41
 
 Cards 14-16 define the discrete ocsillators that will be used to supplement the continuous frequency distribution. They are typically used to represent higher-energy peaks in the vibrational spectrum. 
 
@@ -310,7 +308,7 @@ Cards 14-16 define the discrete ocsillators that will be used to supplement the 
    :language: html
    :lines: 1-
 
-*Cards 17-19 are invoked when an inelastic coherent approximations is requested. Since no intermolecular coherence was requested (i.e. the final value on card 5 is set to 0), these cards are omitted. Instead, we continue directly to card 20.*
+*Cards 17-19 are invoked when an inelastic coherent approximation is requested. Since no intermolecular coherence was requested (i.e. the final value on card 5 is set to 0), these cards are omitted. Instead, we continue directly to card 20.*
 
 - Card 20 is a set of comments that will be included in the final output tape (tape24). Card 20 will continue to be read until a blank line (consisting of only a "/") is read in.
 

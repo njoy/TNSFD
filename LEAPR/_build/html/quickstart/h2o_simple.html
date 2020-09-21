@@ -1,0 +1,682 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Simple Hydrogen in Water &mdash; LEAPR  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hydrogen in Water, Multiple Temperatures" href="h2o_multipleTemps.html" />
+    <link rel="prev" title="Quickstart" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: red" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LEAPR
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theory/index.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usersManual.html">Users Manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Quickstart</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#simple-h-in-h2o">Simple H in H2O</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Simple Hydrogen in Water</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#h-in-h2o-for-multiple-temperatures">H in H2O for Multiple Temperatures</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../codingDetails.html">Coding Details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LEAPR</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Quickstart</a> &raquo;</li>
+        
+      <li>Simple Hydrogen in Water</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/quickstart/h2o_simple.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="simple-hydrogen-in-water">
+<h1>Simple Hydrogen in Water<a class="headerlink" href="#simple-hydrogen-in-water" title="Permalink to this headline">¶</a></h1>
+<p>This example serves as a <em>very</em> simplified input that would allow a user to prepare the thermal scattering law <span class="math notranslate nohighlight">\(S(\alpha,\beta)\)</span> for describing hydrogen bound in water. These values are for instructional purposes only. Note that parentheses following the forward slash will indicate the card number.</p>
+<hr class="docutils" />
+<p><strong>Cards 1-2</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>leapr
+  24                  / (1) output tape number
+  &#39;Simplified H(H2O)&#39; / (2) output tape title
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The zeroth line defines the module, which is LEAPR.</p></li>
+<li><p>Typically, the first card is used to specify input and output files, however since LEAPR does not read in any auxiliary files, only the output file need be specified. In this example, the output file will be located in the (unless otherwise specified) bin directory as “tape24”.</p></li>
+<li><p>The second line (card 2) contains the descriptive title that will be used in the final LEAPR output.</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Card 3</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>leapr
+  24                  / (1) output tape number
+  &#39;Simplified H(H2O)&#39; / (2) output tape title
+  1 1 100             / (3) # temps, print, phonon sum number
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Here, we want to process the material at a single temperature, so the number of temperatures is set to 1.</p></li>
+<li><p>In addition to the output file (for us, tape24), NJOY also returns a summary output file, which is traditionally labeled “output”. To control the amount of detail used when preparing this document, the second input of card 3 is the print control option. This value can be (0,1,2) which indicate increasing level of detail.</p></li>
+<li><p>Every LEAPR run requires that the incoherent scattering component be calculated via phonon expansion method (discrete oscillators and/or diffusive behavior can be included, if requested). Thus, the final input value is the phonon expansion number, which indicates the number of terms <span class="math notranslate nohighlight">\(N\)</span> that should be computed when approximating the sum in <a class="reference internal" href="../theory/inelastic/continuous.html#continuous-solid-type"><span class="std std-ref">the phonon expansion method</span></a>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[S^{(s)}_{n.sym}(\alpha,\beta) \approx \mathrm{e}^{-\alpha\lambda_s}\sum_{n=0}^N \frac{\alpha^n}{n!} W_n(\beta)\]</div>
+<hr class="docutils" />
+<p><strong>Card 4</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>leapr
+  24                  / (1) output tape number
+  &#39;Simplified H(H2O)&#39; / (2) output tape title
+  1 1 100             / (3) # temps, print, phonon sum number
+  1 1001 0 0 1e-75    / (4) MAT, ZA, sab type, log control, min sab value
+</pre></div>
+</div>
+<ul>
+<li><p>Every material has an ENDF-specified identification number to describe the scattering material. Note that these MAT numbers that describe <em>materials</em> are separate from those that describe <em>individual atoms</em>.</p>
+<blockquote>
+<div><p>For example, the MAT number for <span class="math notranslate nohighlight">\(^1\mbox{H}\)</span> is 125, according to <a class="reference external" href="https://t2.lanl.gov/nis/data/endf/endfvii-n.html">https://t2.lanl.gov/nis/data/endf/endfvii-n.html</a>, whereas the MAT number for water is 1, according to <a class="reference external" href="https://oecd-nea.org/dbdata/data/manual-endf/endf102.pdf">https://oecd-nea.org/dbdata/data/manual-endf/endf102.pdf</a>. For convenience, the currently recognized MAT numbers for commonly occuring materials are provided below.</p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 8%" />
+<col style="width: 25%" />
+<col style="width: 8%" />
+<col style="width: 25%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Compount</p></th>
+<th class="head"><p>MAT</p></th>
+<th class="head"><p>Compound</p></th>
+<th class="head"><p>MAT</p></th>
+<th class="head"><p>Compound</p></th>
+<th class="head"><p>MAT</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\mbox
+{H}_2\mbox
+{O}\)</span></p></td>
+<td><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{BeO}\)</span></p></td>
+<td><p>27</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{O}\)</span> in
+<span class="math notranslate nohighlight">\(\mbox
+{BeO}\)</span></p></td>
+<td><p>46</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cold
+<span class="math notranslate nohighlight">\(^1_1
+\mbox{H}\)</span>
+(Para)</p></td>
+<td><p>2</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{Be}_2\mbox
+{C}\)</span></p></td>
+<td><p>28</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{O}\)</span> in
+<span class="math notranslate nohighlight">\(\mbox
+{SiO}_2\)</span></p></td>
+<td><p>47</p></td>
+</tr>
+<tr class="row-even"><td><p>Cold
+<span class="math notranslate nohighlight">\(^1_1
+\mbox{H}\)</span>
+(Ortho)</p></td>
+<td><p>3</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{Be}\)</span> in
+<span class="math notranslate nohighlight">\(\mbox
+{BeO}\)</span></p></td>
+<td><p>29</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{O}\)</span> in
+<span class="math notranslate nohighlight">\(\mbox
+{UO}_2\)</span></p></td>
+<td><p>48</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\mbox
+{H}\)</span> in
+<span class="math notranslate nohighlight">\(\mbox
+{ZrH}\)</span></p></td>
+<td><p>7</p></td>
+<td><p>Graphite</p></td>
+<td><p>31</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{Al}\)</span> metal</p></td>
+<td><p>53</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\mbox
+{D}_2\mbox
+{O}\)</span></p></td>
+<td><p>11</p></td>
+<td><p>Liquid
+Methane</p></td>
+<td><p>33</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{Fe}\)</span> metal</p></td>
+<td><p>56</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cold
+<span class="math notranslate nohighlight">\(^1_2
+\mbox{D}\)</span>
+(Para)</p></td>
+<td><p>12</p></td>
+<td><p>Solid
+Methane</p></td>
+<td><p>34</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{Zr}\)</span> in
+<span class="math notranslate nohighlight">\(\mbox
+{ZrH}\)</span></p></td>
+<td><p>58</p></td>
+</tr>
+<tr class="row-even"><td><p>Cold
+<span class="math notranslate nohighlight">\(^1_2
+\mbox{D}\)</span>
+(Ortho)</p></td>
+<td><p>13</p></td>
+<td><p>Polyethylene</p></td>
+<td><p>37</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{UO}_2\)</span></p></td>
+<td><p>75</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\mbox
+{Be}\)</span> metal</p></td>
+<td><p>26</p></td>
+<td><p>Benzine</p></td>
+<td><p>40</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mbox
+{UC}\)</span></p></td>
+<td><p>76</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul>
+<li><p>The second input is the <span class="math notranslate nohighlight">\(ZA\)</span> value, which is another value used to identify materials. For the case of <span class="math notranslate nohighlight">\(\mbox{H}\)</span> in <span class="math notranslate nohighlight">\(\mbox{H}_2\mbox{O}\)</span>, this is equal to 101 as can be seen by the following rules:</p>
+<blockquote>
+<div><p>For isotopes, <span class="math notranslate nohighlight">\(ZA\)</span> is equal to <span class="math notranslate nohighlight">\(1000\,Z+A\)</span> where <span class="math notranslate nohighlight">\(Z\)</span> and <span class="math notranslate nohighlight">\(A\)</span> are the charge number and mass number. If the material is an element that has more than one naturally occurring isotope, then <span class="math notranslate nohighlight">\(ZA\)</span> is equal to <span class="math notranslate nohighlight">\(1000\,Z\)</span>. If the material is a compound, then <span class="math notranslate nohighlight">\(ZA\)</span> is equal to <span class="math notranslate nohighlight">\(ZA=\mbox{MAT}+100\)</span>.</p>
+</div></blockquote>
+</li>
+</ul>
+<ul>
+<li><p>The third input on card 4 is a flag for what “type” of scattering law (symmetric vs. non-symmetric) to output. A value of 0 corresponds to symmetric, whereas a value of 1 corresponds to non-symmetric. Note that if the non-symmetric scattering law is chosen, then in actuality <span class="math notranslate nohighlight">\(S_{n.sym}(\alpha,-\beta)\)</span> will be returned (this is because the positive side of the non-symmetric scattering law becomes prohibitively small and thus hard to store).</p>
+<p>Recall that the symmetric and non-symmetric scattering laws are related to each other by</p>
+<div class="math notranslate nohighlight">
+\[S_{sym}(\alpha,\beta)=\mathrm{e}^{\beta/2}~S_{n.sym}(\alpha,\beta)\]</div>
+<p>and that</p>
+<div class="math notranslate nohighlight">
+\[S_{n.sym}(\alpha,\beta)=\mathrm{e}^{-\beta}~S_{n.sym}(\alpha,-\beta)\]</div>
+</li>
+</ul>
+<blockquote>
+<div><p>Lastly, it is worth nothing that if a value of 1 is chosen here (indicating a non-symmetric scattering law), that the output file <strong>cannot</strong> be processed by the THERMR module. [MAKE SURE THAT THIS IS CORRECT]</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>The fourth entry on card 4 is a flag for whether the output file should contain <span class="math notranslate nohighlight">\(S(\alpha,\beta)\)</span> or <span class="math notranslate nohighlight">\(\mbox{log}_{10}\big[S(\alpha,\beta)\big]\)</span> (which correspond to an entry value of 0 or 1, respectively). Writing results in log form is a standard ENDF approach of handling very small numbers for thermal scattering.</p></li>
+<li><p>The last entry on card 4 is the minimum value of <span class="math notranslate nohighlight">\(S(\alpha,\beta)\)</span> to store.</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Card 5</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>leapr
+  24                  / (1) output tape number
+  &#39;Simplified H(H2O)&#39; / (2) output tape title
+  1 1 100             / (3) # temps, print, phonon sum number
+  1 1001 0 0 1e-75    / (4) MAT, ZA, sab type, log control, min sab value
+  0.999 20.45 2 0 0 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, cohApprox  
+</pre></div>
+</div>
+<p>LEAPR allows for either 1 or 2 scattering species to be considered in the same run. Card 5 is focused on the materials primary scatterer. If there is a secondary scatterer considered, that will be specified on the following card.</p>
+<ul class="simple">
+<li><p>The first value is the atomic weight ratio of the primary scatterer (AWR), which is defined as the ratio of the mass of the material to that of the neutron. For hydrogen in water, this is about 0.99917.</p></li>
+<li><p>The second value is the bound scattering cross section <span class="math notranslate nohighlight">\(\sigma_b\)</span>. These values can be obtained at <a class="reference external" href="https://www.nndc.bnl.gov/sigma">https://www.nndc.bnl.gov/sigma</a> under “resonance parameters - interpreted”.</p></li>
+<li><p>The number of primary scattering atoms in the material. For water, there are two hydrogens.</p></li>
+<li><p>The fourth value is a flag for coherent elastic scattering (Bragg edges). It can be 0 or 1. A value of 0 is chosen which indiates no coherent elastic calculation.</p></li>
+<li><p>The fifth value is a cold hydrogen/deuterium flag, which dictates whether or not nuclear spins can be assumed to be distributed randomly. In most cases, this flag will be 0, indicating that spins are randomly distributed (i.e. the material is not cold hydrogen or cold deuterium).</p></li>
+<li><p>The final value defines whether intermolecular coherence will be accounted for, and if so, how it will be approximated. If 0 is chosen, no intermolecular coherence will be considered, whereas 1 and 2 indicate that the Vineyard and Skold approximations will be used, respectively. If the latter two options are used, Cards 17-18 must be provided, and Card 19 must also be provided if a value of 2 is chosen (Skold).</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Card 6</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>leapr
+  24                  / (1) output tape number
+  &#39;Simplified H(H2O)&#39; / (2) output tape title
+  1 1 100             / (3) # temps, print, phonon sum number
+  1 1001 0 0 1e-75    / (4) MAT, ZA, sab type, log control, min sab value
+  0.999 20.45 2 0 0 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, cohApprox  
+  1 1 15.853 3.88 1   / (6) #2nd scatterers, scatter type, AWR, bound xs, #atoms 
+</pre></div>
+</div>
+<p>This card is focused on the secondary scatterer, if applicable.</p>
+<ul class="simple">
+<li><p>This is the number of secondary scatterers in a material. For water, there is a single oxygen atom in a molecule, this this is set to 1. Note that values above 1 are not allowed.</p></li>
+<li><p>The second input dictates how to describe the scattering of this secondary species. This entry can take a value of 0, 1, or 2 corresponding to short-collision time (SCT), free, or diffusion respectively. Oxygen in water is described as a free gas, thus a value of 1 is chosen.</p></li>
+<li><p>The third entry is the atomic weight ratio (AWR) of the secondary scatterer.</p></li>
+<li><p>The fourth entry is the bound scattering cross section <span class="math notranslate nohighlight">\(\sigma_b\)</span> for the secondary scatterer.</p></li>
+<li><p>[WAIT YEAH NO DEFINITELY TRY TO UNDERSTAND THIS CARD BETTER, YOU’RE JUST TOO TIRED RIGHT NOW]</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Card 7-9</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>leapr
+  24                  / (1) output tape number
+  &#39;Simplified H(H2O)&#39; / (2) output tape title
+  1 1 100             / (3) # temps, print, phonon sum number
+  1 1001 0 0 1e-75    / (4) MAT, ZA, sab type, log control, min sab value
+  0.999 20.45 2 0 0 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, cohApprox  
+  1 1 15.853 3.88 1   / (6) #2nd scatterers, scatter type, AWR, bound xs, #atoms 
+
+  22 28 1             / (7) # alphas, # betas, scaling option 
+  0.01 0.02 0.04 0.06 0.08 
+  0.20 0.40 0.60 0.80 2.00 
+  4.00 6.00 8.00 10.0 15.0 
+  20.0 25.0 30.0 35.0 40.0 
+  45.0 50.0           / (8) alphas
+  0.00 0.01 0.02 0.03 0.04 
+  0.05 0.06 0.07 0.08 0.09 
+  0.10 0.20 0.30 0.40 0.50 
+  0.60 0.70 0.80 0.90 1.00 
+  2.00 4.00 6.00 8.00 10.0 
+  15.0 20.0 25.0      / (9) betas
+</pre></div>
+</div>
+<p>LEAPR prepares the scattering law <span class="math notranslate nohighlight">\(S(\alpha,\beta)\)</span> for a user-defiend grid of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> values.</p>
+<ul class="simple">
+<li><p>Card 7 defines the number of <span class="math notranslate nohighlight">\(\alpha\)</span> values (22), the number of <span class="math notranslate nohighlight">\(\beta\)</span> values (28) and whether the <span class="math notranslate nohighlight">\(\alpha,\beta\)</span> grids should be scaled. If the scaling option is set to 0, neither grid is scaled. Since it is set to 1, however, both grids will be scaled by <span class="math notranslate nohighlight">\(0.0253/k_bT\)</span> where <span class="math notranslate nohighlight">\(k_bT\)</span> is the temperature in eV.</p></li>
+<li><p>Card 8 provides the <span class="math notranslate nohighlight">\(\alpha\)</span> values, and Card 9 provides the <span class="math notranslate nohighlight">\(\beta\)</span> values. For lines with many values of inputs, such as Cards 8 and 9 here, the input values can span multiple lines since LEAPR was already informed of the number of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> values to expect in Card 7.</p></li>
+</ul>
+<p>Note that, as seen above, a blank line can be added between lines of LEAPR input to separate cards.</p>
+<hr class="docutils" />
+<p><strong>Card 10-12</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>leapr
+  24                  / (1) output tape number
+  &#39;Simplified H(H2O)&#39; / (2) output tape title
+  1 1 100             / (3) # temps, print, phonon sum number
+  1 1001 0 0 1e-75    / (4) MAT, ZA, sab type, log control, min sab value
+  0.999 20.45 2 0 0 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, cohApprox  
+  1 1 15.853 3.88 1   / (6) #2nd scatterers, scatter type, AWR, bound xs, #atoms 
+
+  22 28 1             / (7) # alphas, # betas, scaling option 
+  0.01 0.02 0.04 0.06 0.08 
+  0.20 0.40 0.60 0.80 2.00 
+  4.00 6.00 8.00 10.0 15.0 
+  20.0 25.0 30.0 35.0 40.0 
+  45.0 50.0           / (8) alphas
+  0.00 0.01 0.02 0.03 0.04 
+  0.05 0.06 0.07 0.08 0.09 
+  0.10 0.20 0.30 0.40 0.50 
+  0.60 0.70 0.80 0.90 1.00 
+  2.00 4.00 6.00 8.00 10.0 
+  15.0 20.0 25.0      / (9) betas
+
+  296                 / (10) temperature (K)
+  .00255 67           / (11) rho spacing (eV), # of rho values given
+   .0000 .0005 .0010 .0020 .0035 
+   .0050 .0075 .0100 .0130 .0165 
+   .0200 .0245 .0290 .0340 .0395 
+   .0450 .0506 .0562 .0622 .0686 
+   .0750 .0830 .0910 .0990 .1070 
+   .1150 .1197 .1214 .1218 .1195 
+   .1125 .1065 .1005 .0954 .0912 
+   .0871 .0839 .0807 .0779 .0757 
+   .0735 .0716 .0697 .0680 .0665 
+   .0650 .0634 .0618 .0602 .0586 
+   .0571 .0558 .0546 .0535 .0525 
+   .0515 .0504 .0493 .0482 .0470 
+   .0459 .0447 .0436 .0428 .0424 
+   .0420 .0000        / (12) rho values (frequency distribution) 
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Card 10 provides the desired temperature in K.</p></li>
+<li><p>Cards 11 and 12 define the vibrational frequency spectrum (phonon distribution, phonon density of states, etc) that will be used in the continuous, phonon expansion calculation. The frequency distribution is provided on a uniformly spaced energy grid (energy grid has units of eV).</p>
+<ul>
+<li><p>The first entry of Card 11 is the energy spacing on this grid, and the second entry is the number of values in this frequency distribution.</p></li>
+<li><p>Card 12 provides the frequency distribution values. Note that the first and last values should be 0.0. The distribution provided here is a significantly simplified model.</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<p><strong>Card 13</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>leapr
+  24                  / (1) output tape number
+  &#39;Simplified H(H2O)&#39; / (2) output tape title
+  1 1 100             / (3) # temps, print, phonon sum number
+  1 1001 0 0 1e-75    / (4) MAT, ZA, sab type, log control, min sab value
+  0.999 20.45 2 0 0 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, cohApprox  
+  1 1 15.853 3.88 1   / (6) #2nd scatterers, scatter type, AWR, bound xs, #atoms 
+
+  22 28 1             / (7) # alphas, # betas, scaling option 
+  0.01 0.02 0.04 0.06 0.08 
+  0.20 0.40 0.60 0.80 2.00 
+  4.00 6.00 8.00 10.0 15.0 
+  20.0 25.0 30.0 35.0 40.0 
+  45.0 50.0           / (8) alphas
+  0.00 0.01 0.02 0.03 0.04 
+  0.05 0.06 0.07 0.08 0.09 
+  0.10 0.20 0.30 0.40 0.50 
+  0.60 0.70 0.80 0.90 1.00 
+  2.00 4.00 6.00 8.00 10.0 
+  15.0 20.0 25.0      / (9) betas
+
+  296                 / (10) temperature (K)
+  .00255 67           / (11) rho spacing (eV), # of rho values given
+   .0000 .0005 .0010 .0020 .0035 
+   .0050 .0075 .0100 .0130 .0165 
+   .0200 .0245 .0290 .0340 .0395 
+   .0450 .0506 .0562 .0622 .0686 
+   .0750 .0830 .0910 .0990 .1070 
+   .1150 .1197 .1214 .1218 .1195 
+   .1125 .1065 .1005 .0954 .0912 
+   .0871 .0839 .0807 .0779 .0757 
+   .0735 .0716 .0697 .0680 .0665 
+   .0650 .0634 .0618 .0602 .0586 
+   .0571 .0558 .0546 .0535 .0525 
+   .0515 .0504 .0493 .0482 .0470 
+   .0459 .0447 .0436 .0428 .0424 
+   .0420 .0000        / (12) rho values (frequency distribution) 
+  0.05  0. 0.45       / (13) translation wgt, diffusion coeff., continuous wgt
+</pre></div>
+</div>
+<p>When processing incoherent scattering, LEAPR processes the vibrational frequency spectrum from Card 12 in the phonon expansion. If requested, two additional effects can be considered: the effect of discrete ocsillators and the effect of some diffusive behavior. Card 13 defines how much, if any, attention should be paid to the diffusive nature of the material.</p>
+<p>To combine the effects of continuous, diffusive, and discrete-oscillator behavior, each of these three components is assigned a weight, and these weights must add to 1.</p>
+<ul class="simple">
+<li><p>The first entry of card 13 is the translation weight.</p></li>
+<li><p>The second entry is the diffusion coefficient, which is set to zero for this model.</p></li>
+<li><p>The third entry is the continuous distribution weight.</p></li>
+</ul>
+<p>According to these input, the translative/diffusive behavior will be weighted by 0.05 andthe continuous, solid-type behavior will be weighted by 0.45. Since these add up to 0.5, that means that the weighting of the discrete oscillators (which will be defined shortly) must add to an additional 0.5.</p>
+<hr class="docutils" />
+<p><strong>Card 14-16</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>leapr
+  24                  / (1) output tape number
+  &#39;Simplified H(H2O)&#39; / (2) output tape title
+  1 1 100             / (3) # temps, print, phonon sum number
+  1 1001 0 0 1e-75    / (4) MAT, ZA, sab type, log control, min sab value
+  0.999 20.45 2 0 0 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, cohApprox  
+  1 1 15.853 3.88 1   / (6) #2nd scatterers, scatter type, AWR, bound xs, #atoms 
+
+  22 28 1             / (7) # alphas, # betas, scaling option 
+  0.01 0.02 0.04 0.06 0.08 
+  0.20 0.40 0.60 0.80 2.00 
+  4.00 6.00 8.00 10.0 15.0 
+  20.0 25.0 30.0 35.0 40.0 
+  45.0 50.0           / (8) alphas
+  0.00 0.01 0.02 0.03 0.04 
+  0.05 0.06 0.07 0.08 0.09 
+  0.10 0.20 0.30 0.40 0.50 
+  0.60 0.70 0.80 0.90 1.00 
+  2.00 4.00 6.00 8.00 10.0 
+  15.0 20.0 25.0      / (9) betas
+
+  296                 / (10) temperature (K)
+  .00255 67           / (11) rho spacing (eV), # of rho values given
+   .0000 .0005 .0010 .0020 .0035 
+   .0050 .0075 .0100 .0130 .0165 
+   .0200 .0245 .0290 .0340 .0395 
+   .0450 .0506 .0562 .0622 .0686 
+   .0750 .0830 .0910 .0990 .1070 
+   .1150 .1197 .1214 .1218 .1195 
+   .1125 .1065 .1005 .0954 .0912 
+   .0871 .0839 .0807 .0779 .0757 
+   .0735 .0716 .0697 .0680 .0665 
+   .0650 .0634 .0618 .0602 .0586 
+   .0571 .0558 .0546 .0535 .0525 
+   .0515 .0504 .0493 .0482 .0470 
+   .0459 .0447 .0436 .0428 .0424 
+   .0420 .0000        / (12) rho values (frequency distribution) 
+  0.05  0. 0.45       / (13) translation wgt, diffusion coeff., continuous wgt
+  2                   / (14) # of discrete oscillators
+  .205 .48            / (15) oscillator locations (eV)
+  .167 .333           / (16) oscillator weights
+</pre></div>
+</div>
+<p>Cards 14-16 define the discrete ocsillators that will be used to supplement the continuous frequency distribution. They are typically used to represent higher-energy peaks in the vibrational spectrum.</p>
+<ul class="simple">
+<li><p>Card 14 only has a single entry, indicating the number of discrete oscillators that will be used.</p></li>
+<li><p>Card 15 contains the energy locations (eV) of these two discrete ocsillators.</p></li>
+<li><p>Card 16 contains the weights that each of these discrete ocsillators has. Since our translational weight and continuous weight add to 0.5, that means that the sum of these oscillator weights must add to 0.5 so that the total weighting sum will combine to 1.0.</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Card 20</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>leapr
+  24                  / (1) output tape number
+  &#39;Simplified H(H2O)&#39; / (2) output tape title
+  1 1 100             / (3) # temps, print, phonon sum number
+  1 1001 0 0 1e-75    / (4) MAT, ZA, sab type, log control, min sab value
+  0.999 20.45 2 0 0 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, cohApprox  
+  1 1 15.853 3.88 1   / (6) #2nd scatterers, scatter type, AWR, bound xs, #atoms 
+
+  22 28 1             / (7) # alphas, # betas, scaling option 
+  0.01 0.02 0.04 0.06 0.08 
+  0.20 0.40 0.60 0.80 2.00 
+  4.00 6.00 8.00 10.0 15.0 
+  20.0 25.0 30.0 35.0 40.0 
+  45.0 50.0           / (8) alphas
+  0.00 0.01 0.02 0.03 0.04 
+  0.05 0.06 0.07 0.08 0.09 
+  0.10 0.20 0.30 0.40 0.50 
+  0.60 0.70 0.80 0.90 1.00 
+  2.00 4.00 6.00 8.00 10.0 
+  15.0 20.0 25.0      / (9) betas
+
+  296                 / (10) temperature (K)
+  .00255 67           / (11) rho spacing (eV), # of rho values given
+   .0000 .0005 .0010 .0020 .0035 
+   .0050 .0075 .0100 .0130 .0165 
+   .0200 .0245 .0290 .0340 .0395 
+   .0450 .0506 .0562 .0622 .0686 
+   .0750 .0830 .0910 .0990 .1070 
+   .1150 .1197 .1214 .1218 .1195 
+   .1125 .1065 .1005 .0954 .0912 
+   .0871 .0839 .0807 .0779 .0757 
+   .0735 .0716 .0697 .0680 .0665 
+   .0650 .0634 .0618 .0602 .0586 
+   .0571 .0558 .0546 .0535 .0525 
+   .0515 .0504 .0493 .0482 .0470 
+   .0459 .0447 .0436 .0428 .0424 
+   .0420 .0000        / (12) rho values (frequency distribution) 
+  0.05  0. 0.45       / (13) translation wgt, diffusion coeff., continuous wgt
+  2                   / (14) # of discrete oscillators
+  .205 .48            / (15) oscillator locations (eV)
+  .167 .333           / (16) oscillator weights
+
+  &#39; Simplified H in H2O Model &#39;            / (20) Comments that will go in
+  &#39; These notes go in final output file&#39;   / (20) the output tape
+  &#39; (Example, not for real applications)&#39;  / (20) 
+  / (20) This is a blank comment card which indicates the end of LEAPR
+stop  
+</pre></div>
+</div>
+<p><em>Cards 17-19 are invoked when an inelastic coherent approximation is requested. Since no intermolecular coherence was requested (i.e. the final value on card 5 is set to 0), these cards are omitted. Instead, we continue directly to card 20.</em></p>
+<ul>
+<li><p>Card 20 is a set of comments that will be included in the final output tape (tape24). Card 20 will continue to be read until a blank line (consisting of only a “/”) is read in.</p>
+<p>This final blank card indicates the end of LEAPR. However, we still have yet to tell NJOY that we wish to run no more modules. This is done by putting “stop” after the LEAPR input, which ends the NJOY run.</p>
+</li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="h2o_multipleTemps.html" class="btn btn-neutral float-right" title="Hydrogen in Water, Multiple Temperatures" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Quickstart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright copyright stuff
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

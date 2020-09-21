@@ -1,0 +1,47 @@
+leapr
+  24                  / (1) output tape number
+  'Simplified H(H2O)' / (2) output tape title
+  1 1 100             / (3) # temps, print, phonon sum number
+  1 1001 0 0 1e-75    / (4) MAT, ZA, sab type, log control, min sab value
+  0.999 20.45 2 0 0 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, cohApprox  
+  1 1 15.853 3.88 1   / (6) #2nd scatterers, scatter type, AWR, bound xs, #atoms 
+
+  22 28 1             / (7) # alphas, # betas, scaling option 
+  0.01 0.02 0.04 0.06 0.08 
+  0.20 0.40 0.60 0.80 2.00 
+  4.00 6.00 8.00 10.0 15.0 
+  20.0 25.0 30.0 35.0 40.0 
+  45.0 50.0           / (8) alphas
+  0.00 0.01 0.02 0.03 0.04 
+  0.05 0.06 0.07 0.08 0.09 
+  0.10 0.20 0.30 0.40 0.50 
+  0.60 0.70 0.80 0.90 1.00 
+  2.00 4.00 6.00 8.00 10.0 
+  15.0 20.0 25.0      / (9) betas
+
+  296                 / (10) temperature (K)
+  .00255 67           / (11) rho spacing (eV), # of rho values given
+   .0000 .0005 .0010 .0020 .0035 
+   .0050 .0075 .0100 .0130 .0165 
+   .0200 .0245 .0290 .0340 .0395 
+   .0450 .0506 .0562 .0622 .0686 
+   .0750 .0830 .0910 .0990 .1070 
+   .1150 .1197 .1214 .1218 .1195 
+   .1125 .1065 .1005 .0954 .0912 
+   .0871 .0839 .0807 .0779 .0757 
+   .0735 .0716 .0697 .0680 .0665 
+   .0650 .0634 .0618 .0602 .0586 
+   .0571 .0558 .0546 .0535 .0525 
+   .0515 .0504 .0493 .0482 .0470 
+   .0459 .0447 .0436 .0428 .0424 
+   .0420 .0000        / (12) rho values (frequency distribution) 
+  0.05  0. 0.45       / (13) translation wgt, diffusion coeff., continuous wgt
+  2                   / (14) # of discrete oscillators
+  .205 .48            / (15) oscillator locations (eV)
+  .167 .333           / (16) oscillator weights
+
+  ' Simplified H in H2O Model '            / (20) Comments that will go in
+  ' These notes go in final output file'   / (20) the output tape
+  ' (Example, not for real applications)'  / (20) 
+  / (20) This is a blank comment card which indicates the end of LEAPR
+stop  

@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>No Translational Component Included &mdash; LEAPR  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Suggested Readings" href="../suggestedReadings.html" />
+    <link rel="prev" title="Relevant Equations" href="../cohElastic/equations.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: red" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> LEAPR
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../overview/overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#general-theory">General Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#inelastic-scattering">Inelastic Scattering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#coherent-elastic-scattering">Coherent Elastic Scattering</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#incoherent-elastic-scattering">Incoherent Elastic Scattering</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">No Translational Component Included</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#translational-component-included">Translational Component Included</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#further-reading">Further Reading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../usersManual.html">Users Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart/index.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codingDetails.html">Coding Details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">LEAPR</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Theory</a> &raquo;</li>
+        
+      <li>No Translational Component Included</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/theory/incElastic/incElastic.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>In <a class="reference internal" href="../inelastic/continuous.html#continuous-solid-type"><span class="std std-ref">Continuous, Solid-type Spectrum</span></a>, we found that the phonon expansion for solid-type spectra resulted in the following sum:</p>
+<div class="math notranslate nohighlight">
+\[S_s(\alpha,\beta) \approx \mathrm{e}^{-\alpha\lambda_s}~\sum_{n=1}^N\frac{1}{n!}\Big[\alpha\lambda_s\Big]^n\mathcal{T}_n(\beta)\]</div>
+<p>where <span class="math notranslate nohighlight">\(n\)</span> corresponds to the number of phonons created/destroyed in a collision. This summation used intentionally left out the <span class="math notranslate nohighlight">\(n=0\)</span> term (which, since no phonons are created/destroyed, corresponds to elastic scattering). The zero-phonon term is intead considered here, so that if translational motion is desired, it can be properly treated.</p>
+<div class="section" id="no-translational-component-included">
+<h1>No Translational Component Included<a class="headerlink" href="#no-translational-component-included" title="Permalink to this headline">¶</a></h1>
+<p>If the user does not request that a translational component be considered in while preparing the scattering data, then the zero-phonon term may simply be added without additional steps.</p>
+<div class="math notranslate nohighlight">
+\[S_{inc.el}(\alpha,\beta)=\mathrm{e}^{-\alpha\lambda}~\delta(\beta).\]</div>
+<p>The corresponding differential scattering cross section is</p>
+<div class="math notranslate nohighlight">
+\[\sigma(E,\mu)=\frac{\sigma_b}{2}~\mathrm{e}^{-2WE(1-\mu)}\]</div>
+<p>and the integrated cross section is</p>
+<div class="math notranslate nohighlight">
+\[\sigma(E) = \frac{\sigma_b}{2}~\frac{1-\mathrm{e}^{-4WE}}{2WE}.\]</div>
+<p>Where the Debye-Waller factor <span class="math notranslate nohighlight">\(W\)</span> is computed using the Debye-Waller coefficient <span class="math notranslate nohighlight">\(\lambda\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[W=\frac{\lambda}{Ak_bT},\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> is the ratio of the scatterer mass to the neutron mass and <span class="math notranslate nohighlight">\(\lambda\)</span> can be readily computed from the phonon density of states, as was seen in <a class="reference internal" href="../inelastic/continuous.html#continuous-solid-type"><span class="std std-ref">Continuous, Solid-type Spectrum</span></a>.</p>
+<p>LEAPR writes the bound scattering cross section <span class="math notranslate nohighlight">\(\sigma_b\)</span> and the Debye-Waller factor <span class="math notranslate nohighlight">\(W\)</span> as a function of temperature into a section of ENDF-6 output with MF=7 and MT=2.</p>
+</div>
+<div class="section" id="translational-component-included">
+<h1>Translational Component Included<a class="headerlink" href="#translational-component-included" title="Permalink to this headline">¶</a></h1>
+<p>If a translational term is considered, then the translational and continuous scattering law contributions are combined as follows:</p>
+<div class="math notranslate nohighlight">
+\[S(\alpha,\beta) = S_t(\alpha,\beta)~\mathrm{e}^{-\alpha\lambda_s} + \int_{-\infty}^\infty S_t(\alpha,\beta')~S_s(\alpha,\beta-\beta')~d\beta'\]</div>
+<p>Note that while doing this convolution, the values of the translational piece <span class="math notranslate nohighlight">\(S_t(\alpha,\beta')\)</span> and the solid-type piece <span class="math notranslate nohighlight">\(S_s(\alpha,\beta-\beta')\)</span> are precomputed and interpolated on.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../suggestedReadings.html" class="btn btn-neutral float-right" title="Suggested Readings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../cohElastic/equations.html" class="btn btn-neutral float-left" title="Relevant Equations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright copyright stuff
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
