@@ -8,10 +8,11 @@ It is recommended that new users of the NJOY LEAPR module review example inputs 
 
 
 ---------------------------------
-Simple H in H2O 
+Simple H in H2O
 ---------------------------------
 
 This simple H in H2O example...
+
 - Processes thermal scattering data at a single material temperature
 - Considers both a primary and a secondary scatterer 
 - Uses all three components to inelastic scattering (solid type, translational, and discrete oscillators)
@@ -25,11 +26,12 @@ The simple H in H2O example uses very coarse :math:`\alpha` and :math:`\beta` gr
    h2o_simple
 
 
-------------------------------------
-H in H2O for Multiple Temperatures
-------------------------------------
+------------------------------------------------
+Advanced H in H2O 
+------------------------------------------------
 
 This H in H2O example...
+
 - Processes thermal scattering data at multiple temperatures
 - Uses different phonon distribution specifications for each temperature
 - Considers both a primary and a secondary scatterer 

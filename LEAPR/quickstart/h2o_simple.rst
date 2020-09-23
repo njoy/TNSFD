@@ -6,9 +6,12 @@
 .. .. |EXAMPLE| image:: _images/temp.png
 ..    :width: 1em
 
+------------------------------------------
+H in H2O (Single temperature)
+------------------------------------------
 
-Simple Hydrogen in Water
-========================================================
+
+
 This example serves as a *very* simplified input that would allow a user to prepare the thermal scattering law :math:`S(\alpha,\beta)` for describing hydrogen bound in water. These values are for instructional purposes only. Note that parentheses following the forward slash will indicate the card number.
 
 ..
