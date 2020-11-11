@@ -16,7 +16,8 @@ LEAPR and THERMR are two NJOY modules designed to generate thermal neutron scatt
    theory/index
    usersManual
    quickstart/index
-   codingDetails
+
+..   codingDetails
 
 .. Indices and tables
 .. ==================

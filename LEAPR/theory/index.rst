@@ -28,6 +28,14 @@ Inelastic Scattering
 
 Inelastic thermal neutron scattering involves a neutron changing energy via the creation or destruction of vibrational modes, called phonons. To describe such events, LEAPR prepares the **scattering law** :math:`S(\alpha,\beta)`, which is a function of unitless momentum change :math:`\alpha` and unitless energy change :math:`\beta`. The scattering law may be later provided to the THERMR module where the cross section can be determined and sorted according to incoming energy, outgoing energy, and scattering angle. 
 
+A brief introduction to the scattering law is provided here: 
+
+.. toctree::
+   :maxdepth: 4
+
+   inelastic/scatteringLaw
+
+
 Inelastic scattering works in the **incoherent approximation**, which assumes that all inelastic scattering events in a material can be approximated as incoherent (meaning no periodic amplification/destruction of scattered neutron waves). This approximation is applied out of necessity, as accounting for coherent inelastic scattering events is a very difficult (and often unnecessary) step. Be aware, however, that for strong coherent scatterers in crystalline lattices, this approximation may not suffice. 
 
 
