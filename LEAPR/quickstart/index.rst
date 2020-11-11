@@ -4,7 +4,28 @@
 Quickstart
 =====================================
 
-It is recommended that new users of the NJOY LEAPR module review example inputs to ensure proper use of the code. Here, we walk through a set of different inputs to illustrate NJOY capability. We recommend beginning with the simple H in H2O example first, as it outlines the basics of calling LEAPR before performing more advanced calculations that involve multiple temperatures or molecular coherence.
+It is recommended that new users of the NJOY LEAPR module review example inputs to ensure proper use of the code. Here, we walk through a set of different inputs to illustrate NJOY capability. We recommend beginning with the single-temperature Fe-56 example first, as it outlines the basics of calling LEAPR before performing more advanced calculations that involve multiple temperatures or molecular coherence.
+
+
+---------------------------------
+Single-Temperature Fe-56
+---------------------------------
+
+This single temperature Fe-56 example...
+
+- Processes thermal scattering data at a single material temperature
+- Considers only a primary scatterer
+- Uses only the solid-type distribution to describe inelastic scattering 
+
+This example uses very coarse :math:`\alpha` and :math:`\beta` grids and an inaccurate solid-type spectrum, so it is not recommended for realistic calculations and is only for instructional use. 
+
+
+.. toctree::
+   :maxdepth: 1
+
+   fe 
+
+
 
 
 ---------------------------------

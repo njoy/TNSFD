@@ -1,0 +1,41 @@
+leapr
+  25                 / (1) output tape number
+  'Fe-56 metal'      / (2) output tape title
+  6 2                / (3) # temps, print, || phonon sum number*
+  101 26056.         / (4) MAT, ZA, || sab type, log control, min sab value
+  55.454 12.05 1 6 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, || cohApprox
+  0                  / (6) #2nd scatterers, || scatter type, AWR, boundXs, #atoms
+  8 7 1              / (7) # alpha, # betas, scaling option
+  1.0 2.0 3.0 4.0 
+  5.0 6.0 7.0 8.0    / (8) alphas
+  0.0 0.1 0.2 0.3 
+  0.4 0.5 0.6        / (9) betas
+
+  20.                / (10) temperature (K)
+  .0005 79           / (11) rho spacing (eV), # of rho values given
+   0. 0.000111 0.000443 0.000996 0.00177 
+   0.00277 0.00398 0.00542 0.00708 0.00896 
+   0.0111 0.0134 0.0159 0.0187 0.0217 0.0249 
+   0.0283 0.0317 0.0367 0.0400 0.0450 0.0500 
+   0.0550 0.0617 0.0667 0.0733 0.0817 0.0867 
+   0.0950 0.105 0.115 0.127 0.138 0.152 0.168 
+   0.183 0.207 0.235 0.272 0.308 0.323 0.338 
+   0.352 0.370 0.392 0.413 0.438 0.473 0.445 
+   0.395 0.385 0.383 0.398 0.427 0.505 0.495 
+   0.467 0.442 0.420 0.393 0.360 0.333 0.315 
+   0.300 0.295 0.293 0.297 0.310 0.335 0.388 
+   0.553 0.672 0.970 0.553 0.400 0.300 0.222
+   0.145 0.           / (12) rho values (frequency distribution)
+  0.0 0.0 1.0         / (13) translation wgt, diffusion coeff, continuous wgt
+
+  0                   / (14) # discrete oscillators
+
+ -80                  / (10) temperature
+ -293.6               / (10) temperature
+ -400.0               / (10) temperature
+ -600.0               / (10) temperature
+ -800.0               / (10) temperature
+
+ ' fe-56 thermal scattering ' / (20) Comments
+ / Blank line indicating end of LEAPR run
+ stop

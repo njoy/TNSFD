@@ -5,12 +5,19 @@ Theory
 =====================================
 
 
-This is an overview of the theory of LEAPR
 
 
-----------------
-General Theory
-----------------
+--------------------
+Thermal Neutrons 
+--------------------
+
+The scattering cross sections of resonance-range and fast neutrons are typically considered not to be functions of the scattering material's molecular structure. And for these sufficiently fast neutrons, neglecting molecular structure is a valid approximation. When an incoming neutron has energy greater than a few eV, then the material's bonds are relatively insignificant and the scattering event could be considered to occur off an unbound atom. 
+
+For thermal neutrons (i.e. neutrons with energy on the order of a few eV or less), the effects of material structure cannot be so readily dismissed. Thermal neutrons have energy comparable to the material's vibrational, translational, and rotational modes (vibrational modese being of particular interest her). Thus, during a thermal neutron scatters event, the neutron may excite/de-excite one or more of the material's vibrational modes, which dictates the outgoing neutron energy. 
+
+
+
+
 
 
 .. _inelastic_scattering:
@@ -77,9 +84,9 @@ Further Reading
 
 
 
-Indices and tables
-==================
+.. Indices and tables
+.. ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
