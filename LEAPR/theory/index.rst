@@ -31,7 +31,7 @@ Inelastic thermal neutron scattering involves a neutron changing energy via the 
 A brief introduction to the scattering law is provided here: 
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 1
 
    inelastic/scatteringLaw
 
@@ -59,7 +59,7 @@ Coherent elastic scattering calculations should be performed for crystalline mat
 
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 1
 
    cohElastic/bragg
    cohElastic/equations
@@ -74,7 +74,7 @@ Incoherent Elastic Scattering
 Elastic thermal neutron scattering is when a neutron scatters off of some target material without creating/destroying phonons, such that no neutron energy change occurs. **Incoherent** elastic thermal neutron scattering is when the scattered neutron waves do not constructively/destructively interfere. This is important for strong incoherent scatterers, particularly hydrogeneous solids such as solid methane, polyethylene, and zirconium hydride.
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 1
 
    incElastic/incElastic
 

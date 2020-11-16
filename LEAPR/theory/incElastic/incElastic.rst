@@ -1,4 +1,7 @@
 
+Representation of Incoherent Elastic through Debye-Waller Factors
+--------------------------------------------------------------------
+
 ..
   COMMENT: .. contents:: Table of Contents
 
@@ -10,8 +13,7 @@ In :ref:`continuous_solid_type`, we found that the phonon expansion for solid-ty
 where :math:`n` corresponds to the number of phonons created/destroyed in a collision. This summation used intentionally left out the :math:`n=0` term (which, since no phonons are created/destroyed, corresponds to elastic scattering). The zero-phonon term is intead considered here, so that if translational motion is desired, it can be properly treated. 
 
 
-No Translational Component Included 
----------------------------------------
+**No Translational Component Included**
 
 If the user does not request that a translational component be considered in while preparing the scattering data, then the zero-phonon term may simply be added without additional steps. 
 
@@ -48,8 +50,7 @@ LEAPR writes the bound scattering cross section :math:`\sigma_b` and the Debye-W
 
 
 
-Translational Component Included 
-----------------------------------
+**Translational Component Included**
 
 If a translational term is considered, then the translational and continuous scattering law contributions are combined as follows:
 
