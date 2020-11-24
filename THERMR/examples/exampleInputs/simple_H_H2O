@@ -1,0 +1,7 @@
+thermr
+  24 23 25                   / (1) nendf nin nout
+  101 1301 8 1 2 0 0 1 222 2 / (2) matde matdp nbin ntemp iin 
+                             /     icoh iform natom mtref iprint
+  296.0                      / (3) temperature
+  .05 .625                   / (4) tolerance emax
+stop

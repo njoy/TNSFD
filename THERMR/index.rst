@@ -21,6 +21,7 @@ You can find out more at :ref:`overview of THERMR<overview>`.
 
 .. toctree::
    :maxdepth: 1
+   :caption: Contents:
    :hidden:
 
    overview/overview.rst
@@ -88,6 +89,18 @@ After familiarization with the data used to describe the various types of therma
    :hidden:
 
    usersManual/usersManual
+
+
+Example Inputs
+=======================
+
+To briefly illustrate the abilities of THERMR, example THERMR inputs are provided in the :ref:`examples<examplesMain>` directory. 
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   examples/index
 
 
 

@@ -6,6 +6,14 @@
 The LEAPR Module of NJOY
 =====================================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden: 
+
+   self
+
+
+
 LEAPR and THERMR are two NJOY modules designed to generate thermal neutron scattering data. LEAPR's primary function is to calculate the thermal neutron scattering law, while THERMR formats the scattering data into the appropriate cross section formats. Here, we introduce the theory of thermal neutron scattering, how the LEAPR module works, and go through basic examples illustrating LEAPR's capabilities.
 
 .. toctree::
