@@ -13,7 +13,12 @@ where
 .. math::
   \mu_0=1-\frac{2E_i}{E}.
 
-Here, :math:`E` is the incident neutron energy, :math:`E'` is the secondary neutron energy, :math:`\mu` is the scattering cosine in the laboratory reference system, :math:`\sigma_{coh}` is the characteristic bound coherent scattering cross section of the material, :math:`W` is the Debye-Waller Coefficient (which is a function of temperature), :math:`E_i` are the locations in energy of the Bragg-edges, and :math:`f_i` are the 
+Here, :math:`E` is the incident neutron energy, :math:`E'` is the secondary neutron energy, :math:`\mu` is the scattering cosine in the laboratory reference system, :math:`\sigma_{coh}` is the characteristic bound coherent scattering cross section of the material, :math:`W` is the Debye-Waller Coefficient (which is a function of temperature), :math:`E_i` are the locations in energy of the Bragg-edges, and :math:`f_i` are the related to crystallographic structures. 
+
+
+For select materials, LEAPR prepares the coherent elastic scattering data and writes the data into the MF=7/MT=2 ENDF-6 section, and THERMR will ...... ?????????????????????? ????...... ?????????????????????? ????...... ?????????????????????? ??????????????????????
+
+.. locations :math:`E_i` and the :math:`f_i` factors (which are both material and temperature dependent).
 
 
 
