@@ -1,4 +1,6 @@
 
+.. _coherentElastic:
+
 **********************
 Coherent Elastic
 **********************
