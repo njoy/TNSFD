@@ -3,8 +3,8 @@ leapr
   'Simplified H(H2O)' / (2) output tape title
   1 1 100             / (3) # temps, print, phonon sum number
   1 1001 0 0 1e-75    / (4) MAT, ZA, sab type, log control, min sab value
-  0.999 20.45 2 0 0 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, cohApprox  
-  1 1 15.853 3.88 1   / (6) #2nd scatterers, scatter type, AWR, bound xs, #atoms 
+  0.999 20.45 2 0 0 0 / (5) AWR, freeXS, #atoms, cohElastic, coldH, cohApprox  
+  1 1 15.853 3.88 1   / (6) #2nd scatterers, scatter type, AWR, freeXs, #atoms 
 
   22 28 1             / (7) # alphas, # betas, scaling option 
   0.01 0.02 0.04 0.06 0.08 

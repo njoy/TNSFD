@@ -3,8 +3,8 @@ leapr
   'Fe-56 metal'      / (2) output tape title
   1 2                / (3) # temps, print, || phonon sum number
   101 26056.         / (4) MAT, ZA, || sab type, log control, min sab value
-  55.454 12.05 1 6 0 / (5) AWR, boundXS, #atoms, cohElastic, coldH, || cohApprox
-  0                  / (6) #2nd scatterers, || scatter type, AWR, boundXs, #atoms
+  55.454 12.05 1 6 0 / (5) AWR, freeXS, #atoms, cohElastic, coldH, || cohApprox
+  0                  / (6) #2nd scatterers, || scatter type, AWR, freeXs, #atoms
 
   8 7 1              / (7) # alpha, # betas, scaling option
   1.0 2.0 3.0 4.0 

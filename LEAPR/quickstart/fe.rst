@@ -99,7 +99,8 @@ LEAPR allows for either 1 or 2 scattering species to be considered in the same r
 
 - We first specify the atomic weight ratio of the primary scatterer (AWR), which is defined as the ratio of the mass of the material to that of the neutron. For Fe-56, we set this as 55.454. 
 
-- The bound scattering cross section :math:`\sigma_b` is set to 12.05. These values can be obtained at https://www.nndc.bnl.gov/sigma under "resonance parameters - interpreted". 
+- The free atom scattering cross section :math:`\sigma_b` is set to 12.05. 
+  .. These values can be obtained at https://www.nndc.bnl.gov/sigma under "resonance parameters - interpreted". 
 
 - The number of primary scattering atoms. For hydrogen in water, this would be 2, and for Fe-56 we set this to 1.
 

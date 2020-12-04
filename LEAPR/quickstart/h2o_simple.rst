@@ -201,7 +201,7 @@ LEAPR allows for either 1 or 2 scattering species to be considered in the same r
 
 - The first value is the atomic weight ratio of the primary scatterer (AWR), which is defined as the ratio of the mass of the material to that of the neutron. For hydrogen in water, this is about 0.99917.
 
-- The second value is the bound scattering cross section :math:`\sigma_b`. These values can be obtained at https://www.nndc.bnl.gov/sigma under "resonance parameters - interpreted". 
+- The second value is the free atom scattering cross section :math:`\sigma_b` for the primary scatterer (which in this example is hydrogen). These values can be obtained at https://www.nndc.bnl.gov/sigma under "resonance parameters - interpreted". 
 
 - The number of primary scattering atoms in the material. For water, there are two hydrogens.
 
@@ -228,7 +228,7 @@ This card is focused on the secondary scatterer, if applicable.
 
 - The third entry is the atomic weight ratio (AWR) of the secondary scatterer.
 
-- The fourth entry is the bound scattering cross section :math:`\sigma_b` for the secondary scatterer. 
+- The fourth entry is the free scattering cross section :math:`\sigma_b` for the secondary scatterer. 
 
 - [WAIT YEAH NO DEFINITELY TRY TO UNDERSTAND THIS CARD BETTER, YOU'RE JUST TOO TIRED RIGHT NOW]
 

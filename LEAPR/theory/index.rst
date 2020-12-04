@@ -79,16 +79,27 @@ Elastic thermal neutron scattering is when a neutron scatters off of some target
    incElastic/incElastic
 
 
+.. _suggested_readings:
+
 ---------------------------------------
 Further Reading
 ---------------------------------------
 
+This guide is only intended to serve as a preliminary look into LEAPR's treatment of thermal neutron scattering. For a more rigorous treatments and further explanations, please consult the following texts:
 
-.. toctree::
-   :maxdepth: 4
+- *Introduction to the Theory of Thermal Neutron Scattering* by G.L. Squires
 
-   suggestedReadings
-   
+- *Slow Neutron Scattering and Thermalization, with Reactor Applications* by D. E. Parks
+
+- *Nuclear Reactor Theory* [Chapter 7] by G. I. Bell & S. Glasstone
+
+
+
+.. .. toctree::
+    :maxdepth: 4
+
+..     suggestedReadings
+    
 
 
 
