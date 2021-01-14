@@ -8,7 +8,7 @@ Overview
 
 Simulations of nuclear reactors require that neutron scattering distributions be provided. These distributions describe how the energy and trajectory of neutrons change due to a collision with material in the reactor.
 
-If a neutron has sufficiently high energy prior to a scattering event then we may neglect the molecular bonds of the target atom, and thus assume that the target atom was free and unbound. Thermal neutrons are defined as those for which this assumption is no longer valid, and have energy of a few eV or less.  
+If a neutron has sufficiently high energy prior to a scattering event then we may neglect the molecular bonds of the target atom, and thus assume that the target atom was free and unbound. Thermal neutrons are defined as those for which this assumption is no longer valid. Thermal neutron effects are most prominent at energies less than 0.1 eV, but are often considered for neutrons with energy on the order of a few eV or less.  
 
 .. Due to the vital role that these thermal neutrons play in many reactor systems, the ability to accurately simulate a reactor often relies on the thermal scattering data provided to the simulation. 
 

@@ -32,6 +32,8 @@ In NJOY, unit numbers from 20 through 99 are used for storing results or linking
        -  New PENDF tape
 
   
+Note that while :code:`nin` and :code:`nout` are required for each THERMR run, the :code:`nendf` specification is optional. If :code:`nendf` is set to zero, then no LEAPR input file will be read in, and a free gas scattering component will be used to create the output PENDF file :code:`nout`. If this option is exercised and :code:`nendf` is set to zero, then the inelastic option flag :code:`iin` of Card 2 may no be set to 2. 
+
 ..  .. note:: In NJOY, unit numbers from 20 through 99 are used for storing results or linking modules, units 10 through 19 are reserved for scratch files, which will be destroyed after a module has completed its job, and units below 10 are reserved for the system. Negative unit numbers indicate binary mode.
 
 
@@ -59,12 +61,12 @@ Card 2 - Material Information
      * - **icoh**
        - | Elastic options
          |      0  - None
-         |      1  - Graphite 
-         |      2  - Beryllium
-         |      3  - Beryllium Oxide 
-         |      11 - Polyethylene
-         |      12 - H(ZrH) 
-         |      13 - Zr(ZrH) 
+         |      1  - Graphite         (coherent)
+         |      2  - Beryllium        (coherent)
+         |      3  - Beryllium Oxide  (coherent)
+         |      11 - Polyethylene     (incoherent)
+         |      12 - H(ZrH)           (incoherent)
+         |      13 - Zr(ZrH)          (incoherent)
      * - **iform**
        - | Ordering for Inelastic Scattering   
          |      0  - E-E'-mu
