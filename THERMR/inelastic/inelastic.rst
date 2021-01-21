@@ -14,7 +14,7 @@ Inelastic thermal neutron scattering is often described in terms of the "scatter
   \sigma(E,E',\mu) = \frac{\sigma_b}{2k_bT}~\sqrt{\frac{E'}{E}}~\mathrm{e}^{-\beta/2}~S_{sym}(\alpha,\beta)
 
 
-where :math:`\sigma_b` is the bound scattering cross section, :math:`k_bT` is the temperature in eV, :math:`E,E'` are the incoming,outgoing neutron energies, and :math:`S_sym(\alpha,\beta)` is the symmetric form of the thermal neutron scattering law. For a more detailed explanation of the parameters in this equation and the how the scattering law is prepared for various materials, please consult the LEAPR documentation. 
+where :math:`\sigma_b` is the bound scattering cross section, :math:`k_bT` is the temperature in eV, :math:`E,E'` are the incoming, outgoing neutron energies, and :math:`S_{sym}(\alpha,\beta)` is the symmetric form of the thermal neutron scattering law. For a more detailed explanation of this equation and how the scattering law is prepared for various materials, please consult the LEAPR documentation. 
 
 
 
@@ -23,7 +23,7 @@ The scattering law is often prepared by the LEAPR module and written to MF=7/MT=
 
 
 
-If the :math:`\alpha` or :math:`\beta` required is outside the range of the table provided to LEAPR in File 7, then the differential scattering cross section can be computed using the short time collision (SCT) approximation,
+If the :math:`\alpha` or :math:`\beta` required is outside the range of the table provided to LEAPR in File 7, then the differential scattering cross section can be computed using the short-collision time (SCT) approximation,
 
 .. math:: 
   \sigma^{SCT}(E,E',\mu)=\frac{\sigma_b}{2k_bT}\frac{\sqrt{E'/E}}{\sqrt{4\pi~\alpha~T_{eff}/T}}~\mathrm{exp}\left[-\frac{(\alpha-|\beta|)^2}{4\alpha}\frac{T}{T_{eff}}-\frac{\beta+|\beta|}{2}\right]

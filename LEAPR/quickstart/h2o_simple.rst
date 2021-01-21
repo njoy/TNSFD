@@ -7,7 +7,7 @@
 ..    :width: 1em
 
 ------------------------------------------
-H in H2O (Single temperature)
+Simple H in H2O 
 ------------------------------------------
 
 
@@ -229,8 +229,6 @@ This card is focused on the secondary scatterer, if applicable.
 - The third entry is the atomic weight ratio (AWR) of the secondary scatterer.
 
 - The fourth entry is the free scattering cross section :math:`\sigma_b` for the secondary scatterer. 
-
-- [WAIT YEAH NO DEFINITELY TRY TO UNDERSTAND THIS CARD BETTER, YOU'RE JUST TOO TIRED RIGHT NOW]
 
 
 -------------------------------------------------------------------------------

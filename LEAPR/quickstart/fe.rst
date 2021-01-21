@@ -7,7 +7,7 @@
 ..    :width: 1em
 
 ------------------------------------------
-Fe-026 (Single Temperature)
+Single Temp. Fe-56
 ------------------------------------------
 
 
@@ -51,7 +51,7 @@ Note that parentheses following the forward slash will indicate the card number.
    :lines: 1-4
 
 - The first value on Card 3 is the number of temperatures desired, which here is set to 1.
-- In addition to the output file (for us, tape24), NJOY also returns a summary output file, which is traditionally labeled "output". Acceptable values are (0,1,2) where here we use 2 to indicate maximum verbosity. 
+- In addition to the output file (for us, tape25), NJOY also returns a summary output file, which is traditionally labeled "output". Acceptable values are (0,1,2) where here we use 2 to indicate maximum verbosity. 
 - Any LEAPR run will perform a phonon expansion calculation to represent the inelastic scattering behavior. The third input on Card 3 is the phonon expansion number, which indicates the number of terms :math:`N` that should be computed when approximating the sum in :ref:`the phonon expansion method<continuous_solid_type>`.
 
   This phonon expansion number is not specified on Card 3 here, and thus left to the default value of 100.
@@ -73,7 +73,7 @@ Note that parentheses following the forward slash will indicate the card number.
 - The first value on Card 4 is the MAT number (material identification number), and dictates what numerical tag will be on the output tape. Users are encouraged to use ENDF-specified values, when available [https://oecd-nea.org/dbdata/data/manual-endf/endf102.pdf].
 
 
-- The second input is the :math:`ZA` value. For the case of Fe-56this is equal to 26056 as can be seen by the following rules:
+- The second input is the :math:`ZA` value. For the case of Fe-56, this is equal to 26056 as can be seen by the following rules:
 
     For isotopes, :math:`ZA` is equal to :math:`1000\,Z+A` where :math:`Z` and :math:`A` are the charge number and mass number. If the material is an element that has more than one naturally occurring isotope, then :math:`ZA` is equal to :math:`1000\,Z`. If the material is a compound, then :math:`ZA` is equal to :math:`ZA=\mbox{MAT}+100`.
 
@@ -198,6 +198,6 @@ The only value on Card 14 is the number of discrete oscillators to be used. Sinc
    :language: html
    :lines: 1-
 
-- Card 20 is a set of comments that will be included in the final output tape (tape24). Card 20 will continue to be read until a blank line (consisting of only a "/") is read in.
+- Card 20 is a set of comments that will be included in the final output tape (tape25). Card 20 will continue to be read until a blank line (consisting of only a "/") is read in.
 
   This final blank card indicates the end of LEAPR. However, we still have yet to tell NJOY that we wish to run no more modules. This is done by putting "stop" after the LEAPR input, which ends the NJOY run.

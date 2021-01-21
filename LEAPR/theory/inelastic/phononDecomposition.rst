@@ -23,7 +23,7 @@ The continuous spectrum (which requires a phonon distribution) is always require
 .. math:: 
   \rho(\beta) = \rho_{solid}(\beta) + \underbrace{\rho_{trans.}(\beta)}_{\text{optional}} + \underbrace{\sum_{n=1}^{N_{osc}}\omega_n\delta(\beta_n) }_{\text{optional}}
 
-The solid-type spectrum is assumed to vary as :math:`\beta^2` as :math:`\beta` goes to zero, and it must integrate to :math:`\omega_s`, which is the weight for the solid type law (this is a user provided value).
+As :math:`\beta` approaches zero, the solid-type spectrum varies as :math:`\beta^2`. Additionally, the solid-type spectrum must integrate to :math:`\omega_s`, which is the weight for the solid type law (this is a user provided value).
 
 The translational spectrum integrates to the translational weight :math:`\omega_t` (user provided) and can be either a free gas law or a diffusion type spectrum.
 

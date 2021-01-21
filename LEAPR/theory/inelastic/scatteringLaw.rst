@@ -34,12 +34,12 @@ Symmetric vs. Non-Symmetric
 In the definition of the inelastic thermal neutron scattering cross section above, we made use of the non-symmetric scattering law :math:`S_{n.sym}(\alpha,\beta)`. For systems in thermal equilibrium, there is a relationship between upscatter and downscatter called "detail balance" that is a consequence of microscopic reversibility. It requies that 
 
 .. math::
-  S_{n.sym}(\alpha,\beta)=\exp{-\beta}~S_{n.sym}(\alpha,-\beta). 
+  S_{n.sym}(\alpha,\beta)=\exp^{-\beta}~S_{n.sym}(\alpha,-\beta). 
 
 If we define a function :math:`S_{sym}(\alpha,\beta)` to be 
 
 .. math::
-  S_{sym}(\alpha,\beta) = \exp{\beta/2}~S_{n.sym}(\alpha,\beta)
+  S_{sym}(\alpha,\beta) = \exp^{\beta/2}~S_{n.sym}(\alpha,\beta)
 
 then the detail balance requirement states that 
 
@@ -52,7 +52,7 @@ which indicates that :math:`S_{sym}(\alpha,\beta)` is a symmetric function in :m
   The symmetry :math:`S_{sym}(\alpha,\beta)` is not present for liquid hydrogen or liquid deuterium. 
 
 
-LEAPR performs all its calculations on :math:`S_{n.sym}(\alpha,-\beta)` because its contents are typically much more moderately valued than :math:`S_{sym}(\alpha,\beta)` or :math:`S_{n.sym}(\alpha,beta)`. Typically, however, the scattering law is converted to :math:`S_{sym}(\alpha,\beta)` prior to being written to the output tape. 
+LEAPR performs all its calculations on :math:`S_{n.sym}(\alpha,-\beta)` because its contents have less extreme values than :math:`S_{sym}(\alpha,\beta)` or :math:`S_{n.sym}(\alpha,\beta)`. Typically, however, the scattering law is converted to :math:`S_{sym}(\alpha,\beta)` prior to being written to the output tape. 
 
 
 

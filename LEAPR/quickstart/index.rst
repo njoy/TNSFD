@@ -7,9 +7,11 @@ Quickstart
 It is recommended that new users of the NJOY LEAPR module review example inputs to ensure proper use of the code. Here, we walk through a set of different inputs to illustrate NJOY capability. We recommend beginning with the single-temperature Fe-56 example first, as it outlines the basics of calling LEAPR before performing more advanced calculations that involve multiple temperatures or molecular coherence.
 
 
----------------------------------
-Single-Temperature Fe-56
----------------------------------
+.. ---------------------------------
+.. Single-Temperature Fe-56
+.. ---------------------------------
+
+.. rubric:: Single-Temperature Fe-56
 
 This single temperature Fe-56 example...
 
@@ -27,10 +29,7 @@ This example uses very coarse :math:`\alpha` and :math:`\beta` grids and an inac
 
 
 
-
----------------------------------
-Simple H in H2O
----------------------------------
+.. rubric:: Simple H in H2O
 
 This simple H in H2O example...
 
@@ -42,14 +41,18 @@ The simple H in H2O example uses very coarse :math:`\alpha` and :math:`\beta` gr
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 0
 
    h2o_simple
 
 
-------------------------------------------------
-Advanced H in H2O 
-------------------------------------------------
+.. ------------------------------------------------
+.. Advanced H in H2O 
+.. ------------------------------------------------
+
+
+.. rubric:: Advanced H in H2O 
+
 
 This H in H2O example...
 

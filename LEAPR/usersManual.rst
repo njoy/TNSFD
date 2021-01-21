@@ -57,7 +57,7 @@ c. :code:`nphon` [**default = 100**] - Phonon-expansion order. All LEAPR runs in
 
 4 - ENDF Output Information
 ----------------------------------------------------------------
-a. :code:`mat` - ENDF material identification number. These numbers are available according to the ENDF standards. For convenience, they are summarized [LINK TO THERMAL SCATTERING PAGE].
+a. :code:`mat` - ENDF material identification number. These numbers are available according to the ENDF standards. 
 
    Restrictions include:
        Values corresponding to materials in the ENDF format.
@@ -100,7 +100,7 @@ The "principal scatterer" may be hard to select for materials. For :math:`\mbox{
 
 a. :code:`awr` - Atomic weight ratio between the neturon and the principal scatterer.
 
-b. :code:`spr` - Free atom cross section for preincipal scatterer (in units of barns). This value should be chosen by looking at the low-energy limit for MF=3/MT=2 (elastic scattering) on the neutron file to be used with the new evaluation.
+b. :code:`spr` - Free atom cross section for principal scatterer (in units of barns). This value should be chosen by looking at the low-energy limit for MF=3/MT=2 (elastic scattering) on the neutron file to be used with the new evaluation.
 
 c. :code:`npr` - Number of principal scattering atoms in the compound. This would be 2 for :math:`\mbox{H}_2\mbox{O}`, and 1 for :math:`\mbox{BeO}`.
 

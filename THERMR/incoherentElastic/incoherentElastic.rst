@@ -12,7 +12,7 @@ Incoherent Elastic
 
 In some materials (particularly hydrogeneous solids), elastic thermal neutron scattering is almost entirely incoherent (e.g. no periodic constructive amplification or destructive cancellation of neutron waves). This scattering, which is denoted as incoherent elastic scattering, can be treated in the incoherent approximation that is vital to LEAPR's preparation of the scattering law. In this approximation, LEAPR assumes that the coherent term of inelastic scattering is negligible, which allows for the so-called "phonon expansion" sum to be performed. For more information on the phonon expansion, please consult the LEAPR documentation. 
 
-The zeroth term of the phonon expansion (indicating to the creation/destruction of zero phonons) corresponds to the incoherent elastic scattering term. This is a simple treatment that allows us to write the differentialincoherent elastic scattering cross section as
+The zeroth term of the phonon expansion (indicating to the creation/destruction of zero phonons) corresponds to the incoherent elastic scattering term. This is a simple treatment that allows us to write the differential incoherent elastic scattering cross section as
 
 .. math::
   \sigma^{inc.el}(E,\mu)=\frac{\sigma_b}{2}~\mathrm{e}^{-2WE(1-\mu)}
@@ -29,7 +29,7 @@ For every energy point on the neutron energy grid, the average cross section (av
 .. math::
   \sigma^{inc.el.}(E)=\frac{\sigma_b}{2}~\left[\frac{1-\mathrm{e}^{-4WE}}{2WE}\right]
 
-along with the equi-probably cosines of that energy,
+along with the equi-probable cosines of that energy,
 
 .. math::
   \begin{align}

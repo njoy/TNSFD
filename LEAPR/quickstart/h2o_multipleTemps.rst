@@ -7,7 +7,7 @@
 ..    :width: 1em
 
 ------------------------------------
-H in H2O (Multiple Temperatures)
+Multiple Temp. H in H2O 
 ------------------------------------
 
 This is an example of H in H2O, which has oxygen as a secondary scatterer and involves multiple temperatures. The main purpose of this example is to illustrate how to process thermal scattering data for different temperatures, where each temperature is characterized using a different phonon distribution.

@@ -127,7 +127,7 @@ where
 .. math:: 
   f_i = \frac{2\pi\hbar^2}{4mNV}\sum_{\tau_i}\Big|F(\tau)\Big|^2.
 
-Since the bound coherent scattering cross section an the Debye-Waller factor differ according to the species of atom, the differential scattering cross section is written as 
+Since the bound coherent scattering cross section and the Debye-Waller factor differ according to the species of atom, the differential scattering cross section is written as 
 
 .. math::
   \begin{align}
@@ -146,7 +146,7 @@ The effective bound coherent scattering cross section for these materials is giv
 .. math::
   \sigma_{coh} = \sum_{j=1}^{N}\sigma_j
   
-Since LEAPR and THERMR only work with one material at a time, they don't have access to different values of :math:`W_j` for the atoms in the unit cell. Therefore, they assume that :math:`W_jE_i` is small (that :math:`W_j` does not vary much from site to site). This allows us to simplify 
+Since LEAPR and THERMR only work with one material at a time, they don't have access to different values of :math:`W_j` for the atoms in the unit cell. Therefore, they assume that :math:`W_jE_i` is small (that :math:`W_j` does not vary much from site to site). 
 
 
 

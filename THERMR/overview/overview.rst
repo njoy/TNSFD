@@ -16,8 +16,8 @@ If a neutron has sufficiently high energy prior to a scattering event then we ma
 
 **The LEAPR module of NJOY is to prepare thermal neutron scattering data for use in reactor system simulations, whereas the THERMR module of NJOY prepares and writes the pointwise scattering cross sections onto a PENDF file for further processing or for use by simulation codes.**
 
-*Note that while THERMR is often used in conjunction with LEAPR, it can also be used to simply add a free-gas scattering component to an existing PENDF. *
 
+Note that while THERMR is often used in conjunction with LEAPR, it can also be used to simply add a free-gas scattering component to an existing PENDF. 
 
 For more information on the physics of thermal neutron scattering and how LEAPR prepares the scattering data, please visit the LEAPR documentation.
 
