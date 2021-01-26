@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to leapr's documentation!
+Welcome to LEAPR's documentation!
 =====================================
 
 .. toctree::
@@ -13,10 +13,3 @@ Welcome to leapr's documentation!
    overview 
    example_vague
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

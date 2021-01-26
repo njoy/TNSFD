@@ -10,6 +10,7 @@ THERMAL Neutron Scattering for Dummies
    thermalScattering/index.rst
    LEAPR/index.rst
    THERMR/index.rst
+   NJOY/index.rst
 
 Indices and tables
 ==================
