@@ -28,7 +28,6 @@ author = 'Amelia Jo Trainer'
 # ones.
 extensions = ['sphinx.ext.mathjax',
     'sphinx.ext.githubpages',
-    'sphinxcontrib.bibtex',
     'recommonmark']
 
 # Add any paths that contain templates here, relative to this directory.
