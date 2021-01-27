@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to LEAPR's documentation!
-=====================================
+A simple introduction to NJOY
+=============================
 
 .. toctree::
    :maxdepth: 4

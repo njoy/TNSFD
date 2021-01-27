@@ -52,14 +52,14 @@ An option to use :math:`E-\mu-E'` ordering is available. Dependences on :math:`\
 
 
 User's Manual
-=======================
+-------------
 
 After familiarization with the data used to describe the various types of thermal neutron scattering, exploring the options available in THERMR can prove helpful. In the :ref:`user's manual<usersManual>` we describe and explain the different options available to you with THERMR.
 
 
 
 Example Inputs
-=======================
+--------------
 
 To briefly illustrate the abilities of THERMR, example THERMR inputs are provided in the :ref:`examples<examplesMain>` directory. 
 
