@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to leapr's documentation!
-=====================================
+Introduction to Thermal Neutron Scattering
+==========================================
 
 .. toctree::
    :maxdepth: 4
@@ -18,16 +18,3 @@ Welcome to leapr's documentation!
    coldh
    sct
    additional 
-..   overview
-   quickStart
-   usersGuide
-   codingDetails 
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
